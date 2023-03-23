@@ -2,14 +2,14 @@
 author: "Pineapple"
 tagline: "Pineapple Certfied Jekyll Theme"
 description: "In 1493, explorer Christopher Columbus found pineapples on Guadeloupe Island in the Caribbean. Pineapple on pizza soon followed..."
-keywords: "Pineapple, Pineapple Pizza, Pineapple House"
-email: "pineapple@example.com"
+keywords: "Wedding invitation"
+email: "duongnguyen.22@icloud.com"
 linkedin: "https://www.linkedin.com/"
 twitter: "https://twitter.com/"
 github: "https://github.com/"
 
 # Site config
-baseurl: "/invitation"
+baseurl: "/"
 highlighter: rouge
 sass:
   sass_dir: assets/scss
