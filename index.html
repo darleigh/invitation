@@ -30,7 +30,7 @@
 		<section class="projects">
 		<div class="grid-container">
 			<h2>Projects I have worked on.</h2>
-				<ul class="projects-list">
+				<ul class="grid-item">
 					{% for item in site.categories.projects reversed %}
 						<li>
 							<a href="{{ item.url | prepend: site.baseurl }}">
