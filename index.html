@@ -12,13 +12,13 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="https://honghanh.org/assets/css/styles.css">
 
-	<title>{{ site.author }} / {{ site.tagline }}</title>
+	<title>{{ site.author }} | {{ site.tagline }}</title>
 	<meta name="author" content="{{ site.author }}">
 	<meta name="description" content="{{ site.description }}">
 	<meta name="keywords" content="{{ site.keywords }}">
 	{% include head.html %}
 </head>
-<body>
+<body style="padding-top:100px">
 	{% include header.html %}
 	<main class="content">
 		<section class="intro">
@@ -27,6 +27,15 @@
 				<p>{{ site.description }}</p>
 			</div>
 		</section>
+		<div class="grid-container">
+			{% for file in site.static_files %}
+			  {% if file.path contains '/invitation_wedding/' and file.extname == '.jpg' %}
+				<div class="grid-item">
+				  <img src="{{ file.path }}" alt="{{ file.name }}" />
+				</div>
+			  {% endif %}
+			{% endfor %}
+		</div>
 		<section class="projects">
 			<div class="container">
 				<h2>Projects I have worked on.</h2>
@@ -43,6 +52,31 @@
 						</li>
 					{% endfor %}
 				</ul>
+			</div>
+		</section>
+		<!--==================== PRODUCTS ====================-->
+		<section class="product section container" id="invitation">
+			<h2 class="section__title-center">
+				Xem ngay<br> các mẫu thiệp mời.
+			</h2>
+
+			<p class="product__description">
+				Đây là một số mẫu bán chạy tại cửa hàng, tất cả đều có chất lượng rất tốt.	
+			</p>
+
+			<div class="product__container grid">
+				<article class="product__card">
+					<div class="product__circle"></div>
+
+					<img src="https://darleigh.com/assets/images/3d/Saly-10.png" alt="" class="product__img">
+
+					<h3 class="product__title">Cacti Plant</h3>
+					<span class="product__price">$19.99</span>
+
+					<!-- <button class="button--flex product__bu	tton">
+						<i class="ri-shopping-bag-line"></i>
+					</button> -->
+				</article>
 			</div>
 		</section>
 	</main>
