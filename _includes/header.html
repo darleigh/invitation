@@ -1,14 +1,36 @@
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!--=============== FAVICON ===============-->
-	<link rel="shortcut icon" href="https://honghanh.org/assets/img/favicon.png" type="image/x-icon">
+<header class="header" id="header">
+	<nav class="nav container">
+		<a href="index" class="nav__logo" style>
+		honghanh
+		</a> 
+		<div class="nav__menu" id="nav-menu">
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a href="index" class="nav__link active-link">Trang chủ</a>
+				</li>
+				<!-- <li class="nav__item">
+					<a href="anpham" class="nav__link">Ấn phẩm</a>
+				</li> -->
+				<li class="nav__item">
+					<a href="hotro" class="nav__link">Hỗ trợ</a>
+				</li>
+				<li class="nav__item">
+					<a href="cuahang" class="nav__link">Cửa hàng</a>
+				</li>
+			</ul>
 
-	<!--=============== REMIX ICONS ===============-->
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+			<div class="nav__close" id="nav-close">
+				<i class="ri-close-line"></i>
+			</div>
+		</div> 
 
-	<!--=============== CSS ===============-->
-	<link rel="stylesheet" href="https://honghanh.org/assets/css/styles.css">
+		<div class="nav__btns">
+			<!-- Theme change button -->
+			<i class="ri-moon-line change-theme" id="theme-button"></i>
 
-	<title>Hồng Hạnh | Trang chủ</title>
-</head>
+			<div class="nav__toggle" id="nav-toggle">
+				<i class="ri-menu-line"></i>
+			</div>
+		</div>
+	</nav>
+</header>
