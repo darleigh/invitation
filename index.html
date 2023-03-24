@@ -26,8 +26,24 @@
 				<h2>About me.</h2>
 				<p>{{ site.description }}</p>
 			</div>
+			<div class="grid-container">
+				<h2>Projects I have worked on.</h2>
+					<ul class="grid-item">
+						{% for item in site.categories.projects reversed %}
+							<li>
+								<a href="{{ item.url | prepend: site.baseurl }}">
+									<div class="grid-item">
+										<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+									</div>
+									<span class="h2">{{ item.project.type }}</span>
+									<h3>{{ item.project.title }}</h3>
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+			</div>
 		</section>
-		<section class="projects">
+		<!-- <section class="projects">
 		<div class="grid-container">
 			<h2>Projects I have worked on.</h2>
 				<ul class="grid-item">
@@ -43,7 +59,7 @@
 						</li>
 					{% endfor %}
 				</ul>
-		</div>
+		</div> -->
 		<!--==================== PRODUCTS ====================-->
 		<section class="product section container" id="invitation">
 			<h2 class="section__title-center">
