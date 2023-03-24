@@ -34,7 +34,7 @@
 					{% for item in site.categories.projects reversed %}
 						<li>
 							<a href="{{ item.url | prepend: site.baseurl }}">
-								<div class="img-wrapper">
+								<div class="grid-item">
 									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
 								</div>
 								<span class="h2">{{ item.project.type }}</span>
