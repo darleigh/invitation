@@ -57,7 +57,7 @@
 			<div class="product__container grid">
 				<article class="product__card">
 					{% for file in site.static_files %}
-						{% if file.path contains '/invitation_wedding/' and file.extname == '.jpg' %}
+						{% if file.path contains 'invitation/' and file.extname == '.jpg' %}
 							<div class="product__circle"></div>
 							<img src="{{ file.path }}" alt="{{ file.name }}" class="product__img"/>
 							</div>
