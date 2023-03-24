@@ -86,19 +86,19 @@
 			</p>
 
 			<div class="product__container grid">
-				<article class="product__card">
-					{% for file in site.static_files %}
-						{% if file.path contains '/invitation/' and file.extname == '.jpg' %}
-							<div class="product__circle"></div>
-							<img src="{{ file.path| prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-							</div>
-						{% endif %}
-					{% endfor %}
-					<!-- <button class="button--flex product__bu	tton">
+				{% for file in site.static_files %}
+				  {% if file.path contains '/invitation_card/' and file.extname == '.jpg' %}
+					<article class="product__card">
+					  <div class="product__circle"></div>
+					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+					  <!-- <button class="button--flex product__button">
 						<i class="ri-shopping-bag-line"></i>
-					</button> -->
-				</article>
-			</div>
+					  </button> -->
+					</article>
+				  {% endif %}
+				{% endfor %}
+			  </div>
+			  
 		</section>
 	</main>
 	{% include footer.html %}
