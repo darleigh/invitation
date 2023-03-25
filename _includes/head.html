@@ -19,14 +19,7 @@
 <!--=============== CSS ===============-->
 <link rel="stylesheet" href="https://honghanh.org/assets/css/styles.css">
 <style>
-.grid-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #FBFBFD;
-  padding: 1rem;
-}
+
 .grid-item-container {
     width: 50%;
     justify-content: center;
@@ -34,15 +27,33 @@
     margin: 10px;
   }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 20px;
-}
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 1rem;
+  }
 
-.grid-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
+  .grid-container {
+    flex-grow:2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin: 0 20px; /* add margin to the left and right */
+  }
+
+  .grid-item img {
+    justify-items: center;
+    width: 100%;
+    height: auto;
+  }
+  @media only screen and (max-width: 600px) {
+    /* Change the grid layout for smaller screens */
+    .grid-container {
+      grid-template-columns: 1fr; /* display 1 grid item in a row */
+      margin: 0; /* remove the horizontal margin */
+    }
+  }
 </style>
