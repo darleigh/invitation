@@ -1,43 +1,39 @@
 <header class="header" id="header">
 	<nav class="nav container">
-	  <a href="index" class="nav__logo" style>
-		honghanh
-	  </a> 
-	  <div class="nav__menu" id="nav-menu">
-		<ul class="nav__list">
-		  <li class="nav__item">
-			<a href="{{site.baseurl}}/index" class="nav__link active-link">Trang chủ</a>
-		  </li>
-		  <li class="nav__item nav__dropdown">
-			<a href="#" class="nav__link">Index <i class="ri-arrow-down-s-line"></i></a>
-			<ul class="nav__dropdown-menu">
-			  <li class="nav__dropdown-item"><a href="{{site.baseurl}}/index#story">Nổi bật</a></li>
-			  <li class="nav__dropdown-item"><a href="{{site.baseurl}}/index#decorate">Trang trí</a></li>
-			  <li class="nav__dropdown-item"><a href="{{site.baseurl}}/index#inviatation">Thiệp mời</a></li>
-			  <li class="nav__dropdown-item"><a href="{{site.baseurl}}/index#others">Ấn phẩm khác</a></li>
+		<a href="{{site.baseurl}}/index" class="nav__logo" style>
+			honghanh
+		</a> 
+		<div class="nav__menu" id="nav-menu">
+			<ul class="nav__list">
+				<li class="nav__item dropdown">
+					<a class="nav__link active-link dropdown-toggle" href="#" id="trangchuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Trang chủ</a>
+					<div class="dropdown-menu" aria-labelledby="trangchuDropdown">
+						<a class="dropdown-item" href="{{site.baseurl}}/index#story">Nổi bật</a>
+						<a class="dropdown-item" href="{{site.baseurl}}/index#decorate">Trang trí</a>
+						<a class="dropdown-item" href="{{site.baseurl}}/index#inviatation">Thiệp mời</a>
+						<a class="dropdown-item" href="{{site.baseurl}}/index#others">Các sản phẩm khác</a>
+					</div>
+				</li>
+				<li class="nav__item">
+					<a href="{{site.baseurl}}/hotro" class="nav__link">Hỗ trợ</a>
+				</li>
+				<li class="nav__item">
+					<a href="{{site.baseurl}}/cuahang" class="nav__link">Cửa hàng</a>
+				</li>
 			</ul>
-		  </li>
-		  <li class="nav__item">
-			<a href="{{site.baseurl}}/hotro" class="nav__link">Hỗ trợ</a>
-		  </li>
-		  <li class="nav__item">
-			<a href="{{site.baseurl}}/cuahang" class="nav__link">Cửa hàng</a>
-		  </li>
-		</ul>
-  
-		<div class="nav__close" id="nav-close">
-		  <i class="ri-close-line"></i>
+
+			<div class="nav__close" id="nav-close">
+				<i class="ri-close-line"></i>
+			</div>
+		</div> 
+
+		<div class="nav__btns">
+			<!-- Theme change button -->
+			<i class="ri-moon-line change-theme" id="theme-button"></i>
+
+			<div class="nav__toggle" id="nav-toggle">
+				<i class="ri-menu-line"></i>
+			</div>
 		</div>
-	  </div> 
-  
-	  <div class="nav__btns">
-		<!-- Theme change button -->
-		<i class="ri-moon-line change-theme" id="theme-button"></i>
-  
-		<div class="nav__toggle" id="nav-toggle">
-		  <i class="ri-menu-line"></i>
-		</div>
-	  </div>
 	</nav>
-  </header>
-  
+</header>
