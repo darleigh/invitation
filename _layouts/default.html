@@ -1,0 +1,31 @@
+---
+---
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="https://honghanh.org/assets/img/favicon.png" type="image/x-icon">
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZEuEWQIytfwbg8i9aMI1U1" crossorigin="anonymous">
+	    <title>{{ site.author }} | Danh mục hỗ trợ</title>
+	{% include seo.html %}
+	{% include head.html %}
+    </head>
+    <body>
+        {% include header.html %}
+        <main class="content">
+               {{content}} 
+        </main> 
+        {% include footer.html %}
+        <script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
+        <script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
+    </body>
+</html>

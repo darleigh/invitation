@@ -18,9 +18,7 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-Q8i/XyCfVt8jB3icfG2eryL2Q5Pa5h9TxhBsf7IpbaqqgCtJfGhpieBh8bNIaU6j" crossorigin="anonymous"></script>
 		  
 	<title>{{ site.author }} | {{ site.tagline }}</title>
-	<meta name="author" content="{{ site.author }}">
-	<meta name="description" content="{{ site.description }}">
-	<meta name="keywords" content="{{ site.keywords }}">
+	{% include seo.html %}
 	{% include head.html %}
 </head>
 <body style="padding-top:100px">
@@ -48,9 +46,9 @@
 					</ul>
 			</div> -->
 			<div class="container" id="story">
-				<h2 class="section__title-center">
-					Thiệp cưới điện tử
-				</h2>
+				<h1 class="section__title-center">
+					Các sự kiện nổi bật.
+				</h1>
 	
 				<p class="product__description">
 					Lưu trữ kỷ niệm cả đời! 🥰
@@ -63,7 +61,7 @@
 						  <img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
 						  <!-- <span class="h2">{{ item.project.type }}</span> -->
 						  <div class="hover-effect">
-							<h4>{{ item.project.title }}</h4>
+							<h4>{{item.project.title}}</h4>
 						  </div>
 							<!-- <h5>{{item.project.date}}</h5> -->
 						</div>
@@ -84,10 +82,10 @@
 					<p class="home__description">
 						Một hành trình để đi tìm hạnh phúc thì phải bước qua biết bao nhiêu chông gai, chúng tôi luôn muốn cùng bạn lưu giữ những khoảng khắc tuyệt vời nhất.
 					</p>
-					<a style="margin-top:8px; width: 60%;" href="https://zalo.me/0919045020" class="button button--flex">
+					<a href="https://zalo.me/0919045020" class="button button--flex">
 						Liên hệ <i class="ri-arrow-right-down-line button__icon"></i>
 					</a>
-					<a href="https://www.tiktok.com/@honghanhdecor?_t=8YzqZK2pyx0&_r=1;width: 35%;text-align:center" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;">
+					<a href="https://www.tiktok.com/@honghanhdecor?_t=8YzqZK2pyx0&_r=1" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;">
 						Tiktok<i class="ri-arrow-right-down-line button__icon"></i>
 					</a>
 				</div>
@@ -135,7 +133,13 @@
 						</p>
 					</div>
 					<div>
-					<a href="#invitation_example" class="button button--flex" style="height:auto; width: 100%;text-align: center;justify-content: center;">
+					<a href="#invitation_highlight" class="button button--flex">
+						<i class="ri-vip-crown-2-fill"></i>Thiệp cưới<i class="ri-arrow-right-down-line button__icon"></i>
+					</a>
+					<a href="#invitation_cake" class="button button--flex">
+						<i class="ri-cake-3-fill"></i> Sinh nhật<i class="ri-arrow-right-down-line button__icon"></i>
+					</a>
+					<a href="#invitation_publication" class="button button--flex">
 						Xem liền!<i class="ri-arrow-right-down-line button__icon"></i>
 					</a>
 					<!-- <a href="https://www.icloud.com/sharedalbum/vi-vi/#B0T532ODWi1fRnP" class="button button--flex" style="height:auto; width: 45%;text-align: center;">
@@ -154,29 +158,123 @@
 			</div>
 		</section>
 		<!--==================== PRODUCTS ====================-->
-		<section class="product section container" id="invitation_example">
-			<h2 class="section__title-center">
-				Xem ngay<br> các mẫu thiệp mời.
+		<section class="product section container" >
+			<h2 class="section__title-center" id="invitation_highlight">
+				Xem ngay<br> các mẫu thiệp mời 🤵🏻👰🏻‍♀️
 			</h2>
 
 			<p class="product__description">
-				Đây là một số mẫu bán chạy tại cửa hàng, tất cả đều có chất lượng rất tốt.	
+				Các mẫu thiệp nổi bật.
 			</p>
-
-			<div class="product__container grid">
+			<a href="{{site.baseurl}}/product" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;">
+				Xem chi tiết<i class="ri-arrow-right-down-line button__icon"></i>
+			</a>
+			<!-- ==================== SHOWALL ==================== -->
+			<!-- <div class="product__container grid">
 				{% for file in site.static_files %}
-				  {% if file.path contains 'invitation_card'%}
+				  {% if file.path contains 'invitation_card/cake'%}
 					<article class="product__card">
-					  <div class="product__circle"></div>
+					  <div class="product__circle"></div>	
 					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-					  <!-- <button class="button--flex product__button">
-						<i class="ri-shopping-bag-line"></i>
-					  </button> -->
+					</article>
+				  {% endif %}
+				{% endfor %}
+			  </div> -->
+			  <!--==================== THIỆP MỜI ====================-->
+			<div class="product__container grid">
+				{% assign count = 0 %}
+				{% for file in site.static_files %}
+				  {% if file.path contains 'invitation_card/highlight' and count < 8 %}
+					{% assign count = count | plus: 1 %}
+					<article class="product__card">
+					  <div class="product__circle"></div>	
+					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+					  <a href="{{site.baseurl}}/product">Xem thêm</a>
 					</article>
 				  {% endif %}
 				{% endfor %}
 			  </div>
+			  <hr>
+			  <!--==================== THIỆP SINH NHẬT ====================-->
+			  <h2 class="section__title-center" id="invitation_cake">
+				Xem ngay<br> các mẫu thiệp sinh nhật đáng yêu cho bé 👧🏻 và 👦🏻.
+			</h2>
+
+			<p class="product__description">
+				Các mẫu thiệp sinh nhật giá rẻ cho số lượng ít.
+			</p>
+			<a href="{{site.baseurl}}" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;">
+				Tiktok<i class="ri-arrow-right-down-line button__icon"></i>
+			</a>
+			<div class="product__container grid">
+				{% assign count = 0 %}
+				{% for file in site.static_files %}
+				  {% if file.path contains 'invitation_card/cake' and count < 8 %}
+					{% assign count = count | plus: 1 %}
+					<article class="product__card">
+					  <div class="product__circle"></div>	
+					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+					  <a href="{{site.baseurl}}/product">Xem thêm</a>
+					</article>
+				  {% endif %}
+				{% endfor %}
+			  </div>
+			  <hr>
+			<!--==================== DANH THIẾP ====================-->
+			  <h2 class="section__title-center" id="invitation_publication">
+				Xem ngay<br> các mẫu thiết kế đặc biêt cho danh thiếp.
+			</h2>
+
+			<p class="product__description">
+				Các mẫu thiết kế nổi bật, đặc biệt có thêm chương trình Danh thiếp trực tuyến cho quý khách hàng.
+			</p>
+			<a href="{{site.baseurl}}" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;">
+				Tiktok<i class="ri-arrow-right-down-line button__icon"></i>
+			</a>
+			<div class="product__container grid">
+				{% assign count = 0 %}
+				{% for file in site.static_files %}
+				  {% if file.path contains 'invitation_card/pub' and count < 8 %}
+					{% assign count = count | plus: 1 %}
+					<article class="product__card">
+					  <div class="product__circle"></div>	
+					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+					  <a href="{{site.baseurl}}/product">Xem thêm</a>
+					</article>
+				  {% endif %}
+				{% endfor %}
+			  </div>
+			  <hr>
 			  
+		</section>
+		<!--==================== PARTNER ====================-->
+		<section class="product section container" id="partner">
+			<h2 class="section__title-center">
+				Đối tác<br> đã đồng hành cùng chúng tôi..
+			</h2>
+
+			<p class="product__description">
+				Xin chân thành cảm ơn đã cùng đồng hành và tin tưởng.
+			</p>
+			<a href="{{site.baseurl}}" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;">
+				Tiktok<i class="ri-arrow-right-down-line button__icon"></i>
+			</a>
+			<div class="grid-container" style="padding-top:50px">
+				{% for item in site.categories.partner reversed %}
+				  <div class="grid-item-container">
+					<a href="{{ item.url | prepend: site.baseurl }}">
+					  <div class="grid-item">
+						<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+						<!-- <span class="h2">{{ item.project.type }}</span> -->
+						<div class="hover-effect">
+						  <h4>{{item.project.title}}</h4>
+						</div>
+						  <!-- <h5>{{item.project.date}}</h5> -->
+					  </div>
+					</a>
+				  </div>
+				{% endfor %}
+			  </div>
 		</section>
 	</main>
 	{% include footer.html %}
