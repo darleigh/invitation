@@ -40,10 +40,22 @@
 								<li>
 									<a href="{{ item.url | prepend: site.baseurl }}">
 										<div class="grid-item">
-											<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+											<div class="product__container grid">
+												{% assign found_image = false %}
+												{% for file in site.static_files %}
+												  {% if file.path contains 'customer/{{item.project.title}}' %}
+													{% if not found_image %}
+													  {% assign found_image = true %}
+														<img src="{{ customer/{{item.project.title}} | prepend: site.baseurl }}" alt="{{ item.project.title}}" />
+													{% endif %}
+												  {% endif %}
+												  {% if found_image %}{% break %}{% endif %}
+												{% endfor %}
+											  </div>
+											
 										</div>
 										<span class="h2">{{ item.project.type }}</span>
-										<h3>{{ item.project.title }}</h3>
+										<h3>{{ item.project.title}}</h3>
 									</a>
 								</li>
 							{% endfor %}
