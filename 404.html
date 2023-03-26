@@ -1,0 +1,70 @@
+---
+---
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="https://honghanh.org/assets/img/favicon.png" type="image/x-icon">
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/assets/css/styles.css">
+        <!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZEuEWQIytfwbg8i9aMI1U1" crossorigin="anonymous">
+		
+
+	<title>{{ site.author }} | Danh mục hỗ trợ</title>
+	{% include seo.html %}
+	{% include head.html %}
+    </head>
+    <body>
+        {% include header.html %}
+        <main class="main">
+        
+            <!-- ==================== STEPS ====================-->
+            <section class="steps section container">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Liên kết của bạn không tồn tại.
+                    </h2>
+                    <p> Hãy tham khảo những dịch vụ của chúng tôi nhé.
+                        </p>
+                    <div class="steps__container grid">
+                        <div class="steps__card">
+                            <div class="steps__card-number">01</div>
+                            <h3 class="steps__card-title">Dịch vụ trang trí tiệc cưới</h3>
+                            <p class="steps__card-description">
+                                Thông tin liên hệ:<br>
+                                <b>Cô Hạnh</b> 0946 292 494
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">02</div>
+                            <h3 class="steps__card-title">Thiệp cưới</h3>
+                            <p class="steps__card-description">
+                                Có rất nhiều mẫu cưới rất đẹp và nhiều ấn phẩm khác, ngoài ra, chúng tôi có hỗ trợ khách hàng đăng tải các hình ảnh lên trang website điện tử riêng.
+                            </p>
+                        </div>
+
+                        <!-- <div class="steps__card">
+                            <div class="steps__card-number">03</div>
+                            <h3 class="steps__card-title">Góp ý & hỗ trợ</h3>
+                            <p class="steps__card-description">
+                                Cửa hàng chúng tôi luôn muốn buổi tiệc diễn ra một cách tốt nhất, nên đừng ngần ngại gì khi quý khách cần yêu cầu hỗ trợ nhé!
+                            </p>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+        </main> 
+        {% include footer.html %}
+        <script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
+        <script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
+    </body>
+</html>
