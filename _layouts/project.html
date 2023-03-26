@@ -14,17 +14,17 @@
 		<section class="home" id="decorate">
 			<div class="home__container container grid">
 					<!-- <img style="border-radius: 20px" src="assets/img/decoration_1.jpg" alt="" class="home__img"> -->
-					<img style="border-radius: 20px" src="assets/images/flamingo.jpg" alt="" class="home__img">
+					<img style="border-radius: 20px" src="assets/img/flamingo.jpg" alt="" class="home__img">
 				<div class="home__data">
 					<h4 class="section__title about__title"> Mừng ngày kỷ niệm của</h4>
 					<h1 class="home__title">
-						{{page.project.groom}} 🤵🏻👰🏻‍♀️ {{page.project.bride}}
+						🤵🏻{{page.project.groom}}<br>
+						👰🏻‍♀️{{page.project.bride}}
 					</h1>
 					<p class="home__description" >Vào ngày <b>{{ page.date | date: "%d/%m/%Y" }}</b>.</p>
+					<p class="home__description" >Tại <b>{{page.projects.location}}</b>.</p>
 					<p class="home__description">
-						Một hành trình tìm kiếm tình yêu đích thực cũng không hề dễ dàng. Đó là một cuộc phiêu lưu đầy thử thách và cảm xúc. Tuy nhiên, nếu bạn đủ may mắn để tìm thấy người đặc biệt, đó sẽ là một trải nghiệm đáng giá mọi nỗ lực.
-						<br>Hạnh phúc không phải là điều dễ dàng để đạt được, nhưng nếu bạn sẵn sàng bước qua những chông gai và khó khăn, thì đó là một hành trình đầy ý nghĩa. Và khi bạn đã tìm thấy người mình yêu thương, hãy cùng nhau trải qua những khoảnh khắc tuyệt vời nhất của cuộc đời.
-						<br>Hãy luôn giữ gìn và yêu thương nhau, chia sẻ những niềm vui, những nỗi buồn, và tạo ra những kỷ niệm đáng nhớ để cùng nhìn lại khi đã già. Tình yêu là một hành trình vô tận, nhưng nếu cùng nhau đi đến cuối con đường, bạn sẽ thấy rằng tất cả những gì đã trải qua đều xứng đáng.
+						Hạnh phúc không phải là điều dễ dàng để đạt được, nhưng nếu bạn sẵn sàng bước qua những chông gai và khó khăn, thì đó là một hành trình đầy ý nghĩa. Và khi bạn đã tìm thấy người mình yêu thương, hãy cùng nhau trải qua những khoảnh khắc tuyệt vời nhất của cuộc đời.
 					</p>
 					<div style="display:flex; flex-direction: column;">
 						<a href="{{page.project.brideurl}}" class="button button--flex">

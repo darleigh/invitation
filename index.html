@@ -53,45 +53,42 @@
 				<p class="product__description">
 					Lưu trữ kỷ niệm cả đời! 🥰
 				</p>
-				--
-				{% assign files = site.static_files | where: "path", "contains", "invitation_card/highlight" %}
-				{% assign random_files = files | sample: 8 %}
 
-				{% for file in random_files %}
-				<article class="product__card">
-					<div class="product__circle"></div>  
-					<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-					<a href="{{site.baseurl}}/product">Xem thêm</a>
-				</article>
-				{% endfor %}
-
-				<!-- <div class="grid-container" style="padding-top:50px">
-				  {% for item in site.categories.projects reversed %}
-					<div class="grid-item-container">
-					  <a href="{{ item.url | prepend: site.baseurl }}">
-						<div class="grid-item">
-						  <img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
-						  <div class="hover-effect">
-							<h4>{{item.project.title}}</h4>
-						  </div>
-							<h5>{{item.project.date}}</h5>
-						</div>
-					  </a>
-					</div>
-				  {% endfor %}
-				</div> -->
 				<div class="grid-container" style="padding-top:50px">
-					{% assign customer_files = site.static_files | where: "path", "customer/{{site.categories.project.title }}" %}
-					{% assign random_customer = customer_files | sample %}
-					<a href="{{ random_customer.path | prepend: site.baseurl }}">
-					  <div class="grid-item">
-						<img src="{{ random_customer.path | prepend: site.baseurl }}" alt="{{ random_customer.name }}" />
-						<div class="hover-effect">
-						  <h4>{{ random_customer.name }}</h4>
-						</div>
-					  </div>
-					</a>
-					</div>
+					{% for item in site.categories.projects reversed %}
+						{% assign count = 0 %}
+							{% for file in site.static_files %}
+								{% if file.path contains 'customer/{{site.categories.project.title}}' and count < 1 %}
+									{% assign count = count | plus: 1 %}
+										<div class="grid-item-container">
+										<a href="{{ file.path | prepend: site.baseurl }}">
+												<div class="grid-item">
+													<img src="here" alt="{{ item.project.title }}" />
+														<div class="hover-effect">
+															<h4>{{item.project.title}}</h4>
+														</div>
+											</div>
+										</a>
+										</div>
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+				</div>
+				<div class="grid-container" style="padding-top:50px">
+					{% for item in site.categories.projects reversed %}
+						{% assign count = 0 %}
+							{% for file in site.static_files %}
+								{% if file.path contains 'customer/{{site.categories.project.title}}' and count < 1 %}
+									{% assign count = count | plus: 1 %}
+									<article class="product__card">
+									<div class="product__circle"></div>	
+									<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+									<a href="{{site.baseurl}}/product">Xem thêm</a>
+									</article>
+								{% endif %}
+						{% endfor %}
+					{% endfor %}
+				  </div>
 					
 		</section>
 		<!--==================== DECORATE ====================-->
