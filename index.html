@@ -25,26 +25,6 @@
 	{% include header.html %}
 	<main class="content">
 		<section class="intro">
-			<!-- <div class="container">
-				<h2>About me.</h2>
-				<p>{{ site.description }}</p>
-			</div> -->
-			<!-- <div class="grid-container">
-				<h2>Projects I have worked on.</h2>
-					<ul class="grid-item">
-						{% for item in site.categories.projects reversed %}
-							<li>
-								<a href="{{ item.url | prepend: site.baseurl }}">
-									<div class="grid-item">
-										<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
-									</div>
-									<span class="h2">{{ item.project.type }}</span>
-									<h3>{{ item.project.title }}</h3>
-								</a>
-							</li>
-						{% endfor %}
-					</ul>
-			</div> -->
 			<div class="container" id="story">
 				<h1 class="section__title-center">
 					Các sự kiện nổi bật.
@@ -53,42 +33,22 @@
 				<p class="product__description">
 					Lưu trữ kỷ niệm cả đời! 🥰
 				</p>
-
-				<div class="grid-container" style="padding-top:50px">
-					{% for item in site.categories.projects reversed %}
-						{% assign count = 0 %}
-							{% for file in site.static_files %}
-								{% if file.path contains 'customer/{{site.categories.project.title}}' and count < 1 %}
-									{% assign count = count | plus: 1 %}
-										<div class="grid-item-container">
-										<a href="{{ file.path | prepend: site.baseurl }}">
-												<div class="grid-item">
-													<img src="here" alt="{{ item.project.title }}" />
-														<div class="hover-effect">
-															<h4>{{item.project.title}}</h4>
-														</div>
-											</div>
-										</a>
+				<div class="grid-container">
+					<h2>Projects I have worked on.</h2>
+						<ul class="grid-item">
+							{% for item in site.categories.projects reversed %}
+								<li>
+									<a href="{{ item.url | prepend: site.baseurl }}">
+										<div class="grid-item">
+											<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
 										</div>
-							{% endif %}
-						{% endfor %}
-					{% endfor %}
+										<span class="h2">{{ item.project.type }}</span>
+										<h3>{{ item.project.title }}</h3>
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
 				</div>
-				<div class="grid-container" style="padding-top:50px">
-					{% for item in site.categories.projects reversed %}
-						{% assign count = 0 %}
-							{% for file in site.static_files %}
-								{% if file.path contains 'customer/{{site.categories.project.title}}' and count < 1 %}
-									{% assign count = count | plus: 1 %}
-									<article class="product__card">
-									<div class="product__circle"></div>	
-									<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-									<a href="{{site.baseurl}}/product">Xem thêm</a>
-									</article>
-								{% endif %}
-						{% endfor %}
-					{% endfor %}
-				  </div>
 					
 		</section>
 		<!--==================== DECORATE ====================-->
@@ -215,7 +175,7 @@
 				  {% endif %}
 				{% endfor %}
 			  </div>
-			  <hr>
+			  
 			  <!--==================== THIỆP SINH NHẬT ====================-->
 			  <h2 class="section__title-center" id="invitation_cake">
 				Xem ngay<br> các mẫu thiệp sinh nhật đáng yêu cho bé 👧🏻 và 👦🏻.
@@ -240,7 +200,7 @@
 				  {% endif %}
 				{% endfor %}
 			  </div>
-			  <hr>
+			  
 			<!--==================== DANH THIẾP ====================-->
 			  <h2 class="section__title-center" id="invitation_publication">
 				Xem ngay<br> các mẫu thiết kế đặc biêt cho danh thiếp.
@@ -265,7 +225,7 @@
 				  {% endif %}
 				{% endfor %}
 			  </div>
-			  <hr>
+			  
 			  
 		</section>
 		<!--==================== PARTNER ====================-->
