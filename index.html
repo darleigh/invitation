@@ -37,7 +37,7 @@
 					<ul class="grid-item">
 					  {% for item in site.categories.projects reversed %}
 						<li>
-						  <a href="{{ item.url | prepend: site.baseurl }}">
+						  <!-- <a href="{{ item.url | prepend: site.baseurl }}"> -->
 							<div class="grid-item">
 							  <div class="product__container grid">
 								{% assign found_image = false %}
@@ -45,7 +45,7 @@
 								  {% if file.path contains "{{site.baseurl}}/customer/{{page.project.direction}}/ %}
 									{% if not found_image %}
 									  {% assign found_image = true %}
-									  <img src="{{site.baseurl}}/customer/{{item.project.direction}}" alt="{{ item.project.title }}" />
+									  <img src="{{site.baseurl}}/customer/{{item.project.direction | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
 									{% endif %}
 								  {% endif %}
 								  {% if found_image %}{% break %}{% endif %}
@@ -54,7 +54,7 @@
 							</div>
 							<span class="h2">{{ item.project.type }}</span>
 							<h3>{{ item.project.title }}</h3> 
-							<p>{{site.baseurl}}/customer/{{item.project.direction}}</p>
+							<p>{{site.baseurl}}/customer/{{item.project.direction | prepend: site.baseurl }}</p>
 						  </a>
 						</li>
 					  {% endfor %}
