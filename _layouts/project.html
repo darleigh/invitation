@@ -72,9 +72,9 @@
 				<p>"{{site.url}}/customer/{{page.project.direction}}"</p>
 					{% if file.path contains '{{site.url}}/customer/{{page.project.direction}}' %}
 						<article class="product__card">
-							<div class="product__circle">
+							<div class="product__circle"></div>
 								<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-							</div>
+							
 							<p>a</p>
 							<div class="product__circle">
 								<img src="{{ file.path}}" alt="{{ file.name }}" class="product__img"/>
@@ -85,14 +85,14 @@
 				{% endfor %}
 			</div>
 			<hr>
+			
 			<div class="product__container grid">
 				{% for file in site.static_files %}
 				<p>"{{site.url}}/customer/{{page.project.direction}}"</p>
 					{% if file.path contains 'customer/{{page.project.direction}}' %}
 						<article class="product__card">
-							<div class="product__circle">
+							<div class="product__circle"></div>
 								<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-							</div>
 							<p>a</p>
 							<div class="product__circle">
 								<img src="{{ file.path}}" alt="{{ file.name }}" class="product__img"/>
@@ -103,7 +103,16 @@
 				{% endfor %}
 			</div>
 
-		
+			<div class="product__container grid">
+				{% for file in site.static_files %}
+				  {% if file.path contains 'invitation_card/cake'%}
+					<article class="product__card">
+					  <div class="product__circle"></div>	
+					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+					</article>
+				  {% endif %}
+				{% endfor %}
+			  </div>
 		  
 		</section>
 	</main>
