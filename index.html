@@ -45,7 +45,7 @@
 								  {% if file.path contains "{{site.baseurl}}/customer/{{page.project.direction}}/ %}
 									{% if not found_image %}
 									  {% assign found_image = true %}
-									  <img src="{{site.baseurl}}/customer/{{item.project.direction | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+									  <img src="{{page.baseurl}}/customer/{{item.project.direction | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
 									{% endif %}
 								  {% endif %}
 								  {% if found_image %}{% break %}{% endif %}
@@ -54,7 +54,7 @@
 							</div>
 							<span class="h2">{{ item.project.type }}</span>
 							<h3>{{ item.project.title }}</h3> 
-							<p>{{site.baseurl}}/customer/{{item.project.direction | prepend: site.baseurl }}</p>
+							<p>{{page.baseurl}}/customer/{{item.project.direction}}</p>
 						  </a>
 						</li>
 					  {% endfor %}
@@ -177,7 +177,6 @@
 					<article class="product__card">
 					  <div class="product__circle"></div>	
 					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-					  <a href="{{site.baseurl}}/product">Xem thêm</a>
 					</article>
 				  {% endif %}
 				{% endfor %}
@@ -202,7 +201,7 @@
 					<article class="product__card">
 					  <div class="product__circle"></div>	
 					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-					  <a href="{{site.baseurl}}/product">Xem thêm</a>
+					  
 					</article>
 				  {% endif %}
 				{% endfor %}
@@ -227,7 +226,7 @@
 					<article class="product__card">
 					  <div class="product__circle"></div>	
 					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-					  <a href="{{site.baseurl}}/product">Xem thêm</a>
+					  
 					</article>
 				  {% endif %}
 				{% endfor %}
