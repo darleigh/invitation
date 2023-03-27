@@ -37,24 +37,22 @@
 					<ul class="grid-item">
 					  {% for item in site.categories.projects reversed %}
 						<li>
-						  <!-- <a href="{{ item.url | prepend: site.baseurl }}"> -->
-							<div class="grid-item">
+						  <a href="{{ item.url | prepend: site.baseurl }}">
 							  <div class="product__container grid">
 								{% assign found_image = false %}
 								{% for file in site.static_files %}
-								  {% if file.path contains "https://honghanh.org/customer/{{page.project.direction}}/ %}
+								  {% if file.path contains "customer/{{item.project.direction | prepend: site.baseurl }}/ %}
 									{% if not found_image %}
 									  {% assign found_image = true %}
-									  <img src="{{page.baseurl}}/customer/{{item.project.direction}}" alt="{{ item.project.title }}" />
+									  <img src="{{site.baseurl}}/customer/{{item.project.direction | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
 									{% endif %}
 								  {% endif %}
 								  {% if found_image %}{% break %}{% endif %}
 								{% endfor %}
-							  </div>
-							</div>
+								</div>
 							<span class="h2">{{ item.project.type }}</span>
 							<h3>{{ item.project.title }}</h3> 
-							<p>https://honghanh.org/customer/{{item.project.direction}}</p>
+							<p>{{site.baseurl}}/customer/{{item.project.direction | prepend: site.baseurl }}</p>
 						  </a>
 						</li>
 					  {% endfor %}
