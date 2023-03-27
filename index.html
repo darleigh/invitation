@@ -34,7 +34,6 @@
 					Lưu trữ kỷ niệm cả đời! 🥰
 				</p>
 				<div class="grid-container">
-					<h2>Projects I have worked on.</h2>
 						<ul class="grid-item">
 							{% for item in site.categories.projects reversed %}
 								<li>
@@ -44,9 +43,10 @@
 												{% assign found_image = false %}
 												{% for file in site.static_files %}
 												  {% if file.path contains 'customer/{{item.project.title}}' %}
+												  <img src="{{site.baseurl}}/{{customer/{{item.project.title}} | prepend: site.baseurl }}" alt="{{ item.project.title}}" />
 													{% if not found_image %}
 													  {% assign found_image = true %}
-														<img src="{{ customer/{{item.project.title}} | prepend: site.baseurl }}" alt="{{ item.project.title}}" />
+														<img src="{{site.baseurl}}/{{customer/{{item.project.title}} | prepend: site.baseurl }}" alt="{{ item.project.title}}" />
 													{% endif %}
 												  {% endif %}
 												  {% if found_image %}{% break %}{% endif %}
@@ -55,7 +55,7 @@
 											
 										</div>
 										<span class="h2">{{ item.project.type }}</span>
-										<h3>{{ item.project.title}}</h3>
+										<h3>{{ item.project.title}}</h3> 
 									</a>
 								</li>
 							{% endfor %}
