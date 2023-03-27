@@ -44,7 +44,8 @@
 								  {% if file.path contains 'customer/{{item.project.direction | prepend: site.baseurl }}' %}
 									{% if not found_image %}
 									  {% assign found_image = true %}
-									  <img src="{{item.project.direction}}" alt="{{ item.project.title }}" />
+									  <img src="{{item.project.direction}}/main.JPG" alt="{{ item.project.title }}" />
+									  <p>{{item.project.direction}}</p>
 									{% endif %}
 								  {% endif %}
 								  {% if found_image %}{% break %}{% endif %}
