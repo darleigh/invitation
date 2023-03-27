@@ -41,7 +41,7 @@
 							  <div class="product__container grid">
 								{% assign found_image = false %}
 								{% for file in site.static_files %}
-								  {% if file.path contains "customer/{{item.project.direction | prepend: site.baseurl }}/ %}
+								  {% if file.path contains "customer/{{item.project.direction | prepend: site.baseurl }}" %}
 									{% if not found_image %}
 									  {% assign found_image = true %}
 									  <img src="{{site.baseurl}}/customer/{{item.project.direction | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
@@ -58,6 +58,19 @@
 					  {% endfor %}
 					</ul>
 				</div>
+				<div class="product__container grid">
+					{% assign count = 0 %}
+					{% for file in site.static_files %}
+					  {% if file.path contains 'customer/{{item.project.direction | prepend: site.baseurl }}' and count < 1 %}
+						{% assign count = count | plus: 1 %}
+						<article class="product__card">
+						  <div class="product__circle"></div>	
+						  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+						  
+						</article>
+					  {% endif %}
+					{% endfor %}
+				  </div>
 				  
 				  
 					
