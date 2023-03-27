@@ -34,33 +34,34 @@
 					Lưu trữ kỷ niệm cả đời! 🥰
 				</p>
 				<div class="grid-container">
-						<ul class="grid-item">
-							{% for item in site.categories.projects reversed %}
-								<li>
-									<a href="{{ item.url | prepend: site.baseurl }}">
-										<div class="grid-item">
-											<div class="product__container grid">
-												{% assign found_image = false %}
-												{% for file in site.static_files %}
-												  {% if file.path contains 'customer/{{item.project.title}}' %}
-												  <img src="{{site.baseurl}}/{{customer/{{item.project.title}} | prepend: site.baseurl }}" alt="{{ item.project.title}}" />
-													{% if not found_image %}
-													  {% assign found_image = true %}
-														<img src="{{site.baseurl}}/{{customer/{{item.project.title}} | prepend: site.baseurl }}" alt="{{ item.project.title}}" />
-													{% endif %}
-												  {% endif %}
-												  {% if found_image %}{% break %}{% endif %}
-												{% endfor %}
-											  </div>
-											
-										</div>
-										<span class="h2">{{ item.project.type }}</span>
-										<h3>{{ item.project.title}}</h3> 
-									</a>
-								</li>
-							{% endfor %}
-						</ul>
-				</div>
+					<ul class="grid-item">
+					  {% for item in site.categories.projects reversed %}
+						<li>
+						  <a href="{{ item.url | prepend: site.baseurl }}">
+							<div class="grid-item">
+							  <div class="product__container grid">
+								{% assign found_image = false %}
+								{% for file in site.static_files %}
+								  {% if file.path contains 'customer/' %}
+									{% if file.path contains item.project.title %}
+									  {% if not found_image %}
+										{% assign found_image = true %}
+										<img src="{{ site.baseurl }}/customer/{{ item.project.title }}" alt="{{ item.project.title }}" />
+									  {% endif %}
+									{% endif %}
+								  {% endif %}
+								  {% if found_image %}{% break %}{% endif %}
+								{% endfor %}
+							  </div>
+							</div>
+							<span class="h2">{{ item.project.type }}</span>
+							<h3>{{ item.project.title }}</h3> 
+						  </a>
+						</li>
+					  {% endfor %}
+					</ul>
+				  </div>
+				  
 					
 		</section>
 		<!--==================== DECORATE ====================-->
@@ -153,7 +154,7 @@
 			<p class="product__description">
 				Các mẫu thiệp nổi bật.
 			</p>
-			<!-- <a href="{{site.baseurl}}/product" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;">
+			<!-- <a href="	/product" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;">
 				Xem chi tiết<i class="ri-arrow-right-down-line button__icon"></i>
 			</a> -->
 			<!-- ==================== SHOWALL ==================== -->
