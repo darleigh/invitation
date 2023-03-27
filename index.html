@@ -33,7 +33,7 @@
 				<p class="product__description">
 					Lưu trữ kỷ niệm cả đời! 🥰
 				</p>
-				<div class="grid-container">
+				<!-- <div class="grid-container">
 					<ul class="grid-item">
 					  {% for item in site.categories.projects reversed %}
 						<li>
@@ -57,11 +57,11 @@
 						</li>
 					  {% endfor %}
 					</ul>
-				</div>
+				</div> -->
 				<div class="product__container grid">
 					{% assign count = 0 %}
 					{% for file in site.static_files %}
-					  {% if file.path contains 'customer/{{item.project.direction | prepend: site.baseurl }}' and count < 1 %}
+					  {% if file.path contains 'customer/{{item.project.direction | prepend: site.baseurl }}' and count < 2 %}
 						{% assign count = count | plus: 1 %}
 						<article class="product__card">
 						  <div class="product__circle"></div>	
