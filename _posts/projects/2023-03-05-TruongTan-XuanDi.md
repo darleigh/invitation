@@ -6,7 +6,7 @@ category: projects
 project:
   title: "Trường Tân & Xuân Di"
   url: ""
-  direction: "TruongTan-XuanDi"
+  direction: "/customer/TruongTan-XuanDi/main.JPG"
   groom: "Trường Tân"
   groomurl: "https://www.facebook.com/chrisvu1992"
   bride: "Xuân Di"
