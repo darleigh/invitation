@@ -33,7 +33,7 @@
 				<p class="product__description">
 					Lưu trữ kỷ niệm cả đời! 🥰
 				</p>
-				<!-- <div class="grid-container">
+				<div class="grid-container">
 					<ul class="grid-item">
 					  {% for item in site.categories.projects reversed %}
 						<li>
@@ -41,10 +41,11 @@
 							  <div class="product__container grid">
 								{% assign found_image = false %}
 								{% for file in site.static_files %}
-								  {% if file.path contains "customer/{{item.project.direction | prepend: site.baseurl }}" %}
+								  {% if file.path contains 'customer/{{item.project.direction | prepend: site.baseurl }}' %}
+								  <img src="customer/{{item.project.direction | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
 									{% if not found_image %}
 									  {% assign found_image = true %}
-									  <img src="{{site.baseurl}}/customer/{{item.project.direction | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+									  <img src="customer/{{item.project.direction | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
 									{% endif %}
 								  {% endif %}
 								  {% if found_image %}{% break %}{% endif %}
@@ -57,22 +58,21 @@
 						</li>
 					  {% endfor %}
 					</ul>
-				</div> -->
+				</div>
 				<div class="product__container grid">
-					{% for item in site.categories.projects reversed %}
-						{% assign count = 0 %}
-						{% for file in site.static_files %}
-						{% if file.path contains 'customer/{{item.project.direction}}' and count < 2 %}
-							{% assign count = count | plus: 1 %}
-							<article class="product__card">
-							<div class="product__circle"></div>	
-							<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-							
-							</article>
-						{% endif %}
-						{% endfor %}
+					{% assign count = 0 %}
+					{% for file in site.static_files %}
+					  {% if file.path contains 'invitation_card/pub' and count < 4 %}
+						{% assign count = count | plus: 1 %}
+						<article class="product__card">
+						  <div class="product__circle"></div>	
+						  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+						  
+						</article>
+					  {% endif %}
 					{% endfor %}
 				  </div>
+	
 				  
 				  
 					
