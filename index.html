@@ -42,12 +42,10 @@
 							  <div class="product__container grid">
 								{% assign found_image = false %}
 								{% for file in site.static_files %}
-								  {% if file.path contains 'customer/' %}
-									{% if file.path contains item.project.title %}
-									  {% if not found_image %}
-										{% assign found_image = true %}
-										<img src="{{ site.baseurl }}/customer/{{ item.project.title }}" alt="{{ item.project.title }}" />
-									  {% endif %}
+								  {% if file.path contains 'customer/' and file.path contains item.project.title %}
+									{% if not found_image %}
+									  {% assign found_image = true %}
+									  <img src="{{site.baseurl}}/customer/{{item.project.title | prepend: '/' }}" alt="{{ item.project.title }}" />
 									{% endif %}
 								  {% endif %}
 								  {% if found_image %}{% break %}{% endif %}
@@ -60,7 +58,8 @@
 						</li>
 					  {% endfor %}
 					</ul>
-				  </div>
+				</div>
+				  
 				  
 					
 		</section>
