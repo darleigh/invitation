@@ -24,13 +24,14 @@
 						🤵🏻{{page.project.groom}}<br>
 						👰🏻‍♀️{{page.project.bride}}
 					</h1>
-					<p class="home__description" >Vào ngày <b>{{ page.date | date: "%d/%m/%Y" }}</b>.
+					<p class="home__description">Vào ngày <b>{{ page.date | date: "%d/%m/%Y" }}</b>.
 					<br>Tại <b>{{page.project.location}}</b>.</p>
+					<p>{{ site.baseurl }}+"/customer/"+{{page.project.direction}}</p>
 					<p class="home__description">
 						Hạnh phúc không phải là điều dễ dàng để đạt được, nhưng nếu bạn sẵn sàng bước qua những chông gai và khó khăn, thì đó là một hành trình đầy ý nghĩa. Và khi bạn đã tìm thấy người mình yêu thương, hãy cùng nhau trải qua những khoảnh khắc tuyệt vời nhất của cuộc đời.
 					</p>
-					<div style="display:flex; flex-direction: column; width: 45%;">
-						<a href="{{page.project.brideurl}}" class="button button--flex">
+					<div>
+						<a href="{{page.project.brideurl}}" class="button button--flex" style="width: 45%;">
 							👰🏻‍♀️<i class="ri-arrow-right-down-line button__icon"></i>
 						</a>
 						<a href="{{page.project.groomurl}}" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black; width: 45%;">
@@ -69,7 +70,7 @@
 		<!-- ==================== SHOWALL ==================== -->
 			<div class="product__container grid">
 				{% for file in site.static_files %}
-				{% if file.path contains {{ site.baseurl }}+"/customer/"+{{page.project.title}} %}
+				{% if file.path contains {{ site.baseurl }}+'/customer/'+{{page.project.direction}} %}
 					<article class="product__card">
 					<div class="product__circle"></div>	
 					<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
