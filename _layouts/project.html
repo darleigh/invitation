@@ -13,8 +13,11 @@
 		<!--==================== DECORATE ====================-->
 		<section class="home" id="decorate">
 			<div class="home__container container grid">
-					<!-- <img style="border-radius: 20px" src="assets/img/decoration_1.jpg" alt="" class="home__img"> -->
-					<img style="border-radius: 20px" src="assets/img/flamingo.png" alt="" class="home__img">
+				{% if sitebase.projects.url %}
+				<img style="border-radius: 20px" src="{{sitebase.project.url}}" alt="" class="home__img">
+				{% else %}
+					<img style="border-radius: 20px" src="{{site.baseurl}}/assets/img/flamingo.png" alt="" class="home__img">
+				{% endif %}
 				<div class="home__data">
 					<h4 class="section__title about__title"> Mừng ngày kỷ niệm của</h4>
 					<h1 class="home__title">
@@ -22,7 +25,7 @@
 						👰🏻‍♀️{{page.project.bride}}
 					</h1>
 					<p class="home__description" >Vào ngày <b>{{ page.date | date: "%d/%m/%Y" }}</b>.</p>
-					<p class="home__description" >Tại <b>{{page.projects.location}}</b>.</p>
+					<p class="home__description" >Tại <b>{{page.project.location}}</b>.</p>
 					<p class="home__description">
 						Hạnh phúc không phải là điều dễ dàng để đạt được, nhưng nếu bạn sẵn sàng bước qua những chông gai và khó khăn, thì đó là một hành trình đầy ý nghĩa. Và khi bạn đã tìm thấy người mình yêu thương, hãy cùng nhau trải qua những khoảnh khắc tuyệt vời nhất của cuộc đời.
 					</p>
