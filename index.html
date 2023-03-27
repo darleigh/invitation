@@ -59,16 +59,18 @@
 					</ul>
 				</div> -->
 				<div class="product__container grid">
-					{% assign count = 0 %}
-					{% for file in site.static_files %}
-					  {% if file.path contains 'customer/{{item.project.direction | prepend: site.baseurl }}' and count < 2 %}
-						{% assign count = count | plus: 1 %}
-						<article class="product__card">
-						  <div class="product__circle"></div>	
-						  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-						  
-						</article>
-					  {% endif %}
+					{% for item in site.categories.projects reversed %}
+						{% assign count = 0 %}
+						{% for file in site.static_files %}
+						{% if file.path contains 'customer/{{item.project.direction}}' and count < 2 %}
+							{% assign count = count | plus: 1 %}
+							<article class="product__card">
+							<div class="product__circle"></div>	
+							<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+							
+							</article>
+						{% endif %}
+						{% endfor %}
 					{% endfor %}
 				  </div>
 				  
