@@ -66,24 +66,11 @@
 				Những khoảnh khắc ấy đưa chúng ta vào một thế giới của tình yêu và hạnh phúc. Trong từng bức ảnh, ánh nắng vàng nhẹ nhàng chiếu sáng trên khuôn mặt của họ, làm nổi bật vẻ đẹp tự nhiên của họ. Những tràng cười vui tươi, những cái ôm ấm áp, những ánh mắt đắm say đều được ghi lại bằng những bức ảnh đầy cảm xúc.
 				nhau tạo nên một khoảng thời gian đáng nhớ trong cuộc đời của họ. Những khoảnh khắc tuyệt vời đó sẽ mãi được lưu giữ và ghi nhận trong trái tim của họ, khiến cho họ càng yêu thương và trân trọng nhau hơn nữa.
 			</p>
-		<!-- ==================== SHOWALL ==================== -->
-		  
-		<div class="product__container grid">
-			{% for file in site.static_files %}
-				{% if file.path contains 'customer/{{page.project.title}}' %}
-				<p>"customer/{{page.project.title}}/"</p>
-					<article class="product__card">
-						<div class="product__circle"></div>    
-						<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-					</article>
-				{% endif %}
-			{% endfor %}
-		</div>
-		<hr>
+		<!-- ==================== SHOWALL ==================== -->	
 			<div class="product__container grid">
 				{% for file in site.static_files %}
-				<p>"customer/{{page.project.title}}"</p>
-					{% if file.path contains '{{site.url}}/customer/TruongTan-XuanDi/' %}
+				<p>"{{site.url}}/customer/{{page.project.direction}}"</p>
+					{% if file.path contains '{{site.url}}/customer/{{page.project.direction}} %}
 						<article class="product__card">
 							<div class="product__circle">
 								<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>

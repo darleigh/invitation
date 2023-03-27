@@ -44,7 +44,7 @@
 								  {% if file.path contains 'customer/{{item.project.direction | prepend: site.baseurl }}' %}
 									{% if not found_image %}
 									  {% assign found_image = true %}
-									  <img src="{{item.project.direction}}/main.JPG" alt="{{ item.project.title }}" />
+									  <img src="{{item.project.direction}}" alt="{{ item.project.title }}" />
 									  <p>{{item.project.direction}}</p>
 									{% endif %}
 								  {% endif %}
@@ -162,9 +162,8 @@
 				{% for file in site.static_files %}
 				  {% if file.path contains 'invitation_card/cake'%}
 					<article class="product__card">
-					  <div class="product__circle">
-								<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-							</div>    
+					  <div class="product__circle"></div>	
+					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
 					</article>
 				  {% endif %}
 				{% endfor %}
@@ -176,9 +175,8 @@
 				  {% if file.path contains 'invitation_card/highlight' and count < 8 %}
 					{% assign count = count | plus: 1 %}
 					<article class="product__card">
-					  <div class="product__circle">
-								<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-							</div>    
+					  <div class="product__circle"></div>	
+					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
 					</article>
 				  {% endif %}
 				{% endfor %}
@@ -201,9 +199,8 @@
 				  {% if file.path contains 'invitation_card/cake' and count < 4 %}
 					{% assign count = count | plus: 1 %}
 					<article class="product__card">
-					  <div class="product__circle">
-								<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-							</div>    
+					  <div class="product__circle"></div>	
+					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
 					  
 					</article>
 				  {% endif %}
@@ -227,10 +224,8 @@
 				  {% if file.path contains 'invitation_card/pub' and count < 4 %}
 					{% assign count = count | plus: 1 %}
 					<article class="product__card">
-					  <div class="product__circle">
-								<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-							</div>    
-					  
+					  <div class="product__circle"></div>	
+					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
 					</article>
 				  {% endif %}
 				{% endfor %}
