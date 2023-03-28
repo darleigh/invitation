@@ -23,13 +23,12 @@
 </head>
 <body>
 	{% include header.html %}
-	<main class="content" style="padding-top:100px; background-color:#fafafa; padding:30px;border-radius:10px">
+	<main class="content" style="background-color:#fafafa; padding:30px;border-radius:10px">
 		<section class="intro">
 			<div class="container" id="story">
-				<h1 class="section__title-center">
+				<h1 class="section__title-center" style="margin-top:100px">
 					Các sự kiện nổi bật.
 				</h1>
-	
 				<p class="product__description">
 					Lưu trữ kỷ niệm cả đời! 🥰
 				</p>
@@ -49,8 +48,7 @@
 											{% endif %}
 										{% endfor %}
 								</div>
-								<h4 style="padding-top:10px">{{ item.project.title }}</h4>
-								<h4 style="padding-top:10px">{{ item.project.title }}</h4>
+								<!-- <h4 style="padding-top:10px">{{item.project.title}}</h4> -->
 							</a>
 						</li>
 						{% endfor %}
