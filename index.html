@@ -35,29 +35,28 @@
 				</p>
 				<div class="grid-container" style="margin-top:50px">
 					<ul class="grid-item">
-					  {% for item in site.categories.projects reversed %}
+						{% for item in site.categories.projects reversed %}
 						<li>
-						  <a href="{{ item.url | prepend: site.baseurl }}">
-							  <div class="product__container grid">
-								{% assign found_image = false %}
-								{% for file in site.static_files %}
-								  {% if file.path contains 'customer/{{item.project.direction | prepend: site.baseurl }}' %}
-									{% if not found_image %}
-									  {% assign found_image = true %}
-									  <img src="{{item.project.direction}}" alt="{{ item.project.title }}" />
-									  <p>{{item.project.direction}}</p>
-									{% endif %}
-								  {% endif %}
-								  {% if found_image %}{% break %}{% endif %}
-								{% endfor %}
+							<a href="{{ item.url | prepend: site.baseurl }}">
+								<div class="img-wrapper">
+									{% assign found_image = false %}
+										{% for file in site.static_files %}
+											{% if found_image == false and file.path contains 'customer/'+page.project.direction %}
+												{% assign found_image = true %}
+												<article class="product__card">
+												<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ item.project.title }}" class="product__img"/>
+												</article>
+											{% endif %}
+										{% endfor %}
 								</div>
-							<span class="h2">{{ item.project.type }}</span>
-							<h3>{{ item.project.title }}</h3> 
-						  </a>
+								<span class="h2">{{ item.project.type }}</span>
+								<h3>{{ item.project.title }}</h3>
+							</a>
 						</li>
-					  {% endfor %}
+						{% endfor %}
 					</ul>
 				</div>
+
 				
 	
 				  
