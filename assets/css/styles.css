@@ -548,9 +548,9 @@ the website, in dark theme
   left: 5%;
 }
 
-.product__card:hover .product__img{
+/* .product__card:hover .product__img{
   transform: translateY(-.5rem);
-}
+} */
 
 /*=============== QUESTIONS ===============*/
 .questions{

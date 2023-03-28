@@ -79,24 +79,17 @@
 			  </div> -->
 			  <div class="product__container grid">
 				{% for file in site.static_files %}
-					{% if file.path contains 'customer/'+'TruongTan-XuanDi'%}
-					<p>Cam on t di1</p>
-					<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-					{% endif %}
 					{% if file.path contains 'customer/'+{{page.project.direction}}%}
-					<p>Cam on t di2</p>
-					<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+						<article class="product__card">
+						<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+					 	 </article>
 					{% endif %}
-					{% if file.path contains 'customer/{{page.project.direction}}'%}
-					<p>customer/{{page.project.direction}}</p>
-					<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-					{% endif %}
-				  {% if file.path contains 'customer/TruongTan-XuanDi'%}
+				  <!-- {% if file.path contains 'customer/TruongTan-XuanDi'%}
 				  <p>customer/{{page.project.direction}}</p>
 					<article class="product__card">
 					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
 					</article>
-				  {% endif %}
+				  {% endif %} -->
 				{% endfor %}
 			  </div>
 		  
