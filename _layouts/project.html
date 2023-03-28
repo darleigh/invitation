@@ -80,6 +80,7 @@
 			  <div class="product__container grid">
 				{% for file in site.static_files %}
 				  {% if file.path contains 'customer/TruongTan-XuanDi'%}
+				  <p>customer/{{page.project.direction}}</p>
 					<article class="product__card">
 					  <div class="product__circle"></div>	
 					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
