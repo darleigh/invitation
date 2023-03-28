@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>{{ site.author }} / {{ page.project.title }}</title>
+	<title>{{ site.author }} • {{ page.project.title }}</title>
 	<meta name="author" content="{{ site.author }}">
 	<meta name="description" content="{{ page.content | strip_html | strip_newlines }}">
 	<meta name="keywords" content="{{ page.meta.keywords }}">
@@ -43,7 +43,7 @@
 						<a href="{{page.project.brideurl}}" class="button button--flex" style="width: 45%;">
 							👰🏻‍♀️<i class="ri-arrow-right-down-line button__icon"></i>
 						</a>
-						<a href="{{page.project.groomurl}}" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black; width: 45%;">
+						<a href="{{page.project.groomurl}}" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black; width: 45%;border: 1px solid rgba(27, 31, 35, 0.15)">
 							🤵🏻<i class="ri-arrow-right-down-line button__icon"></i>
 						</a>
 					</div>
