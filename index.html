@@ -32,7 +32,7 @@
 				<p class="product__description">
 					Lưu trữ kỷ niệm cả đời! 🥰
 				</p>
-				<div class="grid-container" style="margin-top:50px; background-color:#fff; padding:30px;border-radius:10px">
+				<div class="grid-container" style="margin-top:50px; background-color:#fff; padding:30px;border-radius:10px;border: 1px solid rgba(27, 31, 35, 0.15)">
 						{% for item in site.categories.projects reversed %}
 							<a href="{{ item.url | prepend: site.baseurl }}">
 								<div class="img-wrapper">
@@ -59,7 +59,7 @@
 		</section>
 		<!--==================== DECORATE ====================-->
 		<section class="home" id="decorate">
-			<div class="home__container container grid">
+			<div class="home__container container grid" style="border: 1px solid rgba(27, 31, 35, 0.15);padding:20px;border-radius:8px;">
 					<!-- <img style="border-radius: 20px" src="assets/img/decoration_1.jpg" alt="" class="home__img"> -->
 					<img style="border-radius: 20px" src="assets/img/trangtri.png" alt="" class="home__img">
 				<div class="home__data">
@@ -79,7 +79,7 @@
 			</div>
 		</section>
 		<!--==================== INVITATION ====================-->
-		<section class="about section container" id="invitation" style="background-color:#fff; padding:30px;border-radius:10px">
+		<section class="about section container" id="invitation" style="background-color:#fff; padding:30px;border-radius:10px;border: 1px solid rgba(27, 31, 35, 0.15)" >
 			<div class="about__container grid">
 				<img style="border-radius: 20px" src="assets/img/message.png" alt="Thiệp đẹp siêu cấp vip pro" class="about__img">
 
@@ -140,7 +140,7 @@
 		</section>
 		
 		<!--==================== PRODUCTS ====================-->
-		<section class="product section container" style="background-color:#fff; padding:30px;border-radius:10px">
+		<section class="product section container" style="background-color:#fff; padding:30px;border-radius:10px;border: 1px solid rgba(27, 31, 35, 0.15)">
 			<h2 class="section__title-center" id="invitation_highlight">
 				Xem ngay<br> các mẫu thiệp mời 🤵🏻👰🏻‍♀️
 			</h2>
@@ -236,12 +236,12 @@
 		</section>
 	-->
 		<!--==================== THANKS ====================-->
-		<section class="product section container" id="partner">
+		<!-- <section class="product section container" id="partner">
 			<h2 class="section__title-center">
 				Chân thành cảm ơn Quý khách.
 			</h2>
 			<p class="product__description">vì đã đồng hành và tin tưởng sử dụng dịch vụ của chúng tôi.</p>
-		</section>
+		</section> -->
 	</main>
 	{% include footer.html %}
 	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>

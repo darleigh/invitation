@@ -12,14 +12,14 @@
 	<main class="content">
 		<!--==================== DECORATE ====================-->
 		<section class="home" id="decorate">
-			<div class="home__container container grid">
+			<div class="home__container container grid" style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;border-radius:8px;background-color:#fafafa">
 				{% for item in site.categories.projects reversed %}
 								<div class="img-wrapper">
 									{% assign found_image = false %}
 										{% for file in site.static_files %}
 											{% if found_image == false and file.path contains 'customer/'+page.project.direction %}
 												{% assign found_image = true %}
-												<article class="product__card">
+												<article class="product__card" style="margin-right:50px">
 												<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ item.project.title }}" class="product__img"/>
 												</article>
 											{% endif %}
@@ -28,11 +28,11 @@
 								<!-- <h4 style="padding-top:10px">{{item.project.title}}</h4> -->
 							</a>
 						{% endfor %}
-				<div class="home__data style="margin:20px">
+				<div class="home__data style="margin-left:20px">
 					<h4> Mừng ngày kỷ niệm của</h4>
 					<h1 class="home__title">
-						🤵🏻{{page.project.groom}}<br>
-						👰🏻‍♀️{{page.project.bride}}
+						🤵🏻 {{page.project.groom}}<br>
+						👰🏻‍♀️ {{page.project.bride}}
 					</h1>
 					<p class="home__description">Vào ngày <b>{{ page.date | date: "%d/%m/%Y" }}</b>.
 					<br>Tại <b>{{page.project.location}}</b>.</p>
