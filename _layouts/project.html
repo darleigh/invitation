@@ -14,7 +14,6 @@
 		<section class="home" id="decorate">
 			<div class="home__container container grid">
 				{% for item in site.categories.projects reversed %}
-							<a href="{{ item.url | prepend: site.baseurl }}">
 								<div class="img-wrapper">
 									{% assign found_image = false %}
 										{% for file in site.static_files %}
@@ -29,8 +28,8 @@
 								<!-- <h4 style="padding-top:10px">{{item.project.title}}</h4> -->
 							</a>
 						{% endfor %}
-				<div class="home__data">
-					<h4 class="section__title about__title"> Mừng ngày kỷ niệm của</h4>
+				<div class="home__data style="margin:20px">
+					<h4> Mừng ngày kỷ niệm của</h4>
 					<h1 class="home__title">
 						🤵🏻{{page.project.groom}}<br>
 						👰🏻‍♀️{{page.project.bride}}
