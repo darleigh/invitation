@@ -13,11 +13,22 @@
 		<!--==================== DECORATE ====================-->
 		<section class="home" id="decorate">
 			<div class="home__container container grid">
-				{% if sitebase.projects.url %}
-				<img style="border-radius: 20px" src="{{sitebase.project.url}}" alt="" class="home__img">
-				{% else %}
-					<img style="border-radius: 20px" src="{{site.baseurl}}/assets/img/flamingo.png" alt="" class="home__img">
-				{% endif %}
+				{% for item in site.categories.projects reversed %}
+							<a href="{{ item.url | prepend: site.baseurl }}">
+								<div class="img-wrapper">
+									{% assign found_image = false %}
+										{% for file in site.static_files %}
+											{% if found_image == false and file.path contains 'customer/'+page.project.direction %}
+												{% assign found_image = true %}
+												<article class="product__card">
+												<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ item.project.title }}" class="product__img"/>
+												</article>
+											{% endif %}
+										{% endfor %}
+								</div>
+								<!-- <h4 style="padding-top:10px">{{item.project.title}}</h4> -->
+							</a>
+						{% endfor %}
 				<div class="home__data">
 					<h4 class="section__title about__title"> Mừng ngày kỷ niệm của</h4>
 					<h1 class="home__title">

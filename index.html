@@ -33,9 +33,7 @@
 					Lưu trữ kỷ niệm cả đời! 🥰
 				</p>
 				<div class="grid-container" style="margin-top:50px; background-color:#fff; padding:30px;border-radius:10px">
-					<ul class="grid-item">
 						{% for item in site.categories.projects reversed %}
-						<li>
 							<a href="{{ item.url | prepend: site.baseurl }}">
 								<div class="img-wrapper">
 									{% assign found_image = false %}
@@ -50,9 +48,7 @@
 								</div>
 								<!-- <h4 style="padding-top:10px">{{item.project.title}}</h4> -->
 							</a>
-						</li>
 						{% endfor %}
-					</ul>
 				</div>
 
 				
