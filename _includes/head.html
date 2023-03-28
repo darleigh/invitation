@@ -49,8 +49,6 @@
     object-position: center; /* center the image within its container */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
-  .grid-item:hover img {
-  opacity: 0.8; /* reduce the opacity of the image on hover */
 }
     .grid-item .hover-effect {
       position: absolute;
@@ -168,7 +166,7 @@
   @media only screen and (max-width: 600px) {
     /* Change the grid layout for smaller screens */
     .product__container {
-      grid-template-columns: 1fr 1fr; /* display 1 grid item in a row */
+      grid-template-columns: 1fr 1fr 1fr; /* display 1 grid item in a row */
       margin: 0; /* remove the horizontal margin */
     }
   }
