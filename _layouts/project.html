@@ -19,7 +19,7 @@
 										{% for file in site.static_files %}
 											{% if found_image == false and file.path contains 'customer/'+page.project.direction %}
 												{% assign found_image = true %}
-												<article class="product__card" style="margin-right:50px">
+												<article class="product__card" style="margin-right:20px">
 												<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ item.project.title }}" class="product__img"/>
 												</article>
 											{% endif %}
