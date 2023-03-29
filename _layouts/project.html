@@ -77,16 +77,6 @@
 				nhau tạo nên một khoảng thời gian đáng nhớ trong cuộc đời của họ. Những khoảnh khắc tuyệt vời đó sẽ mãi được lưu giữ và ghi nhận trong trái tim của họ, khiến cho họ càng yêu thương và trân trọng nhau hơn nữa.
 			</p>
 		<!-- ==================== SHOWALL ==================== -->		
-			<!-- <div class="product__container grid">
-				{% for file in site.static_files %}
-				  {% if file.path contains 'customer/{{page.project.direction}}'%}
-					<article class="product__card">
-					  
-					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-					</article>
-				  {% endif %}
-				{% endfor %}
-			  </div> -->
 			  <div class="product__container grid">
 				{% for file in site.static_files %}
 					{% if file.path contains 'customer/'+{{page.project.direction}}%}
