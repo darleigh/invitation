@@ -1,2 +1,2 @@
 # HongHanh Wedding Services
-Wrote by Duong Nguyen.
+Written by [Duong Nguyen](darleigh.com).
