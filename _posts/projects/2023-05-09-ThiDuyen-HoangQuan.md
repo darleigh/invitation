@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /:title-:autonumber:output_ext`
+permalink: /:title-:day:month:year
 category: projects
 
 project:

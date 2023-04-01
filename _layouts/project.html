@@ -17,7 +17,7 @@
 								<div class="img-wrapper">
 									{% assign found_image = false %}
 										{% for file in site.static_files %}
-											{% if found_image == false and file.path contains 'customer/'+page.project.direction %}
+											{% if found_image == false and file.path contains 'customer/'page.project.direction %}
 												{% assign found_image = true %}
 												<article class="product__card">
 												<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ item.project.title }}" class="product__img"/>
@@ -79,7 +79,7 @@
 		<!-- ==================== SHOWALL ==================== -->		
 			  <div class="product__container grid">
 				{% for file in site.static_files %}
-					{% if file.path contains 'customer/'+{{page.project.direction}}%}
+					{% if file.path contains 'customer/'{{page.project.direction}}%}
 						<article class="product__card">
 						<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
 					 	 </article>
