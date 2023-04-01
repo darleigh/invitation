@@ -36,7 +36,7 @@
 						{% for item in site.categories.projects reversed %}
 									{% assign found_image = false %}
 										{% for file in site.static_files %}
-											{% if found_image == false and file.path contains 'customer/'page.project.direction %}
+											{% if found_image == false and file.path contains 'customer/'+page.project.direction %}
 											<a href="{{ item.url | prepend: site.baseurl }}">
 												<div class="img-wrapper">
 												{% assign found_image = true %}
