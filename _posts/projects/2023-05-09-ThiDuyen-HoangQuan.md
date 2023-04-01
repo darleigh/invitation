@@ -5,7 +5,7 @@ category: projects
 
 project:
   title: "Thị Duyên & Hoàng Quân"
-  url: ""
+  url: "ThiDuyen-HoangQuan"
   direction: "ThiDuyen-HoangQuan"
   groom: "Hoàng Quân"
   # groomurl: ""
