@@ -77,13 +77,20 @@
 				nhau tạo nên một khoảng thời gian đáng nhớ trong cuộc đời của họ.
 			</p>
 		<!-- ==================== SHOWALL ==================== -->		
-			  <div class="product__container grid">
+			  <!-- <div class="product__container grid">
 				{% for file in site.static_files %}
 					{% if file.path contains 'customer/'+page.project.direction %}
 						<article class="product__card">
 						<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
 					 	 </article>
 					{% endif %}
+				{% endfor %}
+			  </div> -->
+			  <div class="product__container grid">
+				{% for image in page.images %}
+						<article class="product__card">
+							<img src="{{ image.url | prepend: site.baseurl }}" alt="{{ image.alt }}"
+					 	 </article>
 				{% endfor %}
 			  </div>
 			  <hr>
