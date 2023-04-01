@@ -38,7 +38,7 @@
 								<div class="img-wrapper">
 									{% assign found_image = false %}
 										{% for file in site.static_files %}
-											{% if found_image == false and file.path contains 'customer/'page.project.direction %}
+											{% if found_image == false and file.path contains 'customer/'page.project.direction and file.path == {{ item.project.title }} %}
 												{% assign found_image = true %}
 												<article class="product__card">
 													<p>img src="{{ file.path | prepend: site.baseurl }}" alt="{{ item.project.title }}"</p>
