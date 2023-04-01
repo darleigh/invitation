@@ -196,9 +196,7 @@
 				  {% if file.path contains 'invitation_card/cake' and count < 4 %}
 					{% assign count = count | plus: 1 %}
 					<article class="product__card">
-					  
 					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-					  
 					</article>
 				  {% endif %}
 				{% endfor %}
