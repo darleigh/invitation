@@ -12,7 +12,7 @@ project:
   bride: "Xuân Di"
   brideurl: "https://www.facebook.com/dinhhoangxuandi"
   location: "Nhà hàng Diamond Place"
-  logo: /invitation/customer/TruongTan-XuanDi/TTXD1.jpg
+  logo: "/customer/TruongTan-XuanDi/TTXD1.jpg"
 
 agency:
   title: "Tân & Di | Ngày kỷ niệm"
@@ -20,6 +20,6 @@ agency:
 images:
 {% for i in (1..8) %}
   - image:
-    url: "/invitation/customer/TruongTan-XuanDi/TTXD{{ i }}.jpg"
+    url: "/customer/TruongTan-XuanDi/TTXD{{ i }}.jpg"
 {% endfor %}
 ---
