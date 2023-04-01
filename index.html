@@ -69,6 +69,14 @@
 								<!-- <h4 style="padding-top:10px">{{item.project.title}}</h4> -->
 							</a>
 							{% endfor %}
+							{% for post in site.posts %}
+							<a href="{{ post.url | prepend: site.baseurl }}">
+								<div class="img-wrapper">
+								<img src="{{ post.project.direction }}/image.jpg" alt="{{ post.title }}" class="product__img"/>
+								</div>
+								<h4 style="padding-top:10px">{{ post.title }}</h4>
+							</a>
+							{% endfor %}
 				</div>
 
 				
