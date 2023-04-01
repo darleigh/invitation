@@ -88,6 +88,17 @@
     <h2>{{ post.title }}</h2>
   </a>
 {% endfor %}
+					{% for item in site.categories.projects reversed %}
+						<li>
+							<a href="{{ item.url | prepend: site.baseurl }}">
+								<div class="img-wrapper">
+									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+								</div>
+								<span class="h2">{{ item.project.type }}</span>
+								<h3>{{ item.project.title }}</h3>
+							</a>
+						</li>
+					{% endfor %}
 
 				</div>
 
