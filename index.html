@@ -74,9 +74,21 @@
 								<div class="img-wrapper">
 								<img src="{{ post.project.direction }}/image.jpg" alt="{{ post.title }}" class="product__img"/>
 								</div>
-								<h4 style="padding-top:10px">{{ post.title }}</h4>
+								<!-- <h4 style="padding-top:10px">{{ post.title }}</h4> -->
 							</a>
 							{% endfor %}
+							{% for post in site.posts %}
+  <a href="{{ post.url }}">
+    {% for file in site.static_files %}
+      {% if file.path contains post.project.direction %}
+        <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ post.title }}" class="post-img" />
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    <h2>{{ post.title }}</h2>
+  </a>
+{% endfor %}
+
 				</div>
 
 				
