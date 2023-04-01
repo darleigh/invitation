@@ -79,7 +79,7 @@
 		<!-- ==================== SHOWALL ==================== -->		
 			  <div class="product__container grid">
 				{% for file in site.static_files %}
-					{% if file.path contains 'customer/'{{page.project.direction}}%}
+					{% if file.path contains 'customer/'+page.project.direction %}
 						<article class="product__card">
 						<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
 					 	 </article>
