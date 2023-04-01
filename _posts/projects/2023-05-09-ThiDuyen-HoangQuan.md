@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /:plug
+permalink: /:title
 category: projects
 
 project:
@@ -8,9 +8,9 @@ project:
   url: ""
   direction: "ThiDuyen-HoangQuan"
   groom: "Hoàng Quân"
-  # groomurl: "https://www.facebook.com/chrisvu1992"
+  # groomurl: ""
   bride: "Thị Duyên"
-  # brideurl: "https://www.facebook.com/dinhhoangxuandi"
+  # brideurl: ""
   location: "Tư gia"
 
 agency:
