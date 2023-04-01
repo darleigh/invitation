@@ -33,23 +33,22 @@
 					Lưu trữ kỷ niệm cả đời! 🥰
 				</p>
 				<div class="grid-container" style="margin-top:50px; background-color:#fff; padding:30px;border-radius:10px;border: 1px solid rgba(27, 31, 35, 0.15)">
-					{% for item in site.categories.projects. reversed %}
-					<a href="{{ item.url | prepend: site.baseurl }}">
-					  <div class="img-wrapper">
-						{% assign found_image = false %}
-						{% for file in site.static_files %}
-						  {% if file.path contains item.slug and file.path contains 'customer/' %}
-							{% if found_image == false %}
-							  {% assign found_image = true %}  
-							  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ item.project.title }}" class="product__img"/>
-							{% endif %}
-						  {% endif %}
+						{% for item in site.categories.projects. reversed %}
+							<a href="{{ item.url | prepend: site.baseurl }}">
+								<div class="img-wrapper">
+									{% assign found_image = false %}
+										{% for file in site.static_files %}
+											<article class="product__card">
+											{% if found_image == false and file.path contains 'customer/'page.project.direction %}
+												{% assign found_image = true %}	
+												<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ item.project.title }}" class="product__img"/>
+											{% endif %}
+											</article>
+										{% endfor %}
+								</div>
+								<!-- <h4 style="padding-top:10px">{{item.project.title}}</h4> -->
+							</a>
 						{% endfor %}
-					  </div>
-					  <!-- <h4 style="padding-top:10px">{{item.project.title}}</h4> -->
-					</a>
-				  {% endfor %}
-				  
 				</div>
 
 				
