@@ -38,12 +38,12 @@
 					  <div class="img-wrapper">
 						{% assign found_image = false %}
 						{% for file in site.static_files %}
-						  {% if found_image == false and file.path contains 'customer/' and file.path contains item.project.direction %}
-							{% assign found_image = true %}
-							<article class="product__card">
-							  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ item.project.title }}" class="product__img"/>
-							</article>
-						  {% endif %}
+								{% if found_image == false and file.path contains 'customer/' and file.basename == page.name %}
+								{% assign found_image = true %}
+								<article class="product__card">
+								<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ item.project.title }}" class="product__img"/>
+								</article>
+							{% endif %}
 						{% endfor %}
 					  </div>
 					</a>
