@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /:title
+permalink: /:plug
 category: projects
 
 project:
