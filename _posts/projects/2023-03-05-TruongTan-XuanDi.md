@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /:title
+permalink: /:title-{{ page.date | date: "%d%m%Y" }}
 category: projects
 
 project:
