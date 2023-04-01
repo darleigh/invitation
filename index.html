@@ -33,7 +33,7 @@
 					Lưu trữ kỷ niệm cả đời! 🥰
 				</p>
 				<div class="grid-container" style="margin-top:50px; background-color:#fff; padding:30px;border-radius:10px;border: 1px solid rgba(27, 31, 35, 0.15)">
-						<!-- {% for item in site.categories.projects reversed %}
+						{% for item in site.categories.projects reversed %}
 							<p>{{item.project}}</p>
 									{% assign found_image = false %}
 										{% for file in site.static_files %}
@@ -48,25 +48,7 @@
 											</a>
 											{% endif %}
 										{% endfor %}
-						{% endfor %} -->
-						{% for item in site.categories.projects reversed %}
-						<li>
-							<a href="{{ item.url | prepend: site.baseurl }}">
-								<div class="img-wrapper">
-									<img src="{{ item.image.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
-								</div>
-								<span class="h2">{{ item.project.type }}</span>
-								<h3>{{ item.project.title }}</h3>
-							</a>
-						</li>
-					{% endfor %}
-					{% for item in site.categories.projects reversed %}
-							<a href="{{ item.url | prepend: site.baseurl }}">
-								<div class="img-wrapper">
-									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
-								</div>
-							</a>
-					{% endfor %}
+						{% endfor %}
 				</div>
 
 				
