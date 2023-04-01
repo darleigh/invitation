@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /:title-:day:month:yy
+permalink: /:title-:day:month:yyyy
 category: projects
 
 project:
