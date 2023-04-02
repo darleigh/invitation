@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /:title-:day:month
+permalink: /:title-{{ page.date | date: "%d-%m-%Y" }
 date: 2023-05-09
 category: projects
 
