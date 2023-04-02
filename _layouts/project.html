@@ -48,14 +48,17 @@
 					<p class="home__description">
 						Hạnh phúc không phải là điều dễ dàng để đạt được, nhưng nếu bạn sẵn sàng bước qua những chông gai và khó khăn, thì đó là một hành trình đầy ý nghĩa. Và khi bạn đã tìm thấy người mình yêu thương, hãy cùng nhau trải qua những khoảnh khắc tuyệt vời nhất của cuộc đời.
 					</p>
-					<div>
+					<a href="#lib" class="button button--flex" style="width: 45%;">
+						🎥 Xem ngay <i class="ri-arrow-right-down-line button__icon"></i>
+					</a>
+					<!-- <div>
 						<a href="{{page.project.brideurl}}" class="button button--flex" style="width: 45%;">
 							👰🏻‍♀️<i class="ri-arrow-right-down-line button__icon"></i>
 						</a>
 						<a href="{{page.project.groomurl}}" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black; width: 45%;border: 1px solid rgba(27, 31, 35, 0.15)">
 							🤵🏻<i class="ri-arrow-right-down-line button__icon"></i>
 						</a>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</section>
@@ -95,7 +98,7 @@
 					{% endif %}
 				{% endfor %}
 			  </div> -->
-			  <div class="product__container grid">
+			  <div class="product__container grid" id="lib">
 				{% for image in page.images %}
 						<article class="product__card">
 							<img src="{{ image.url | prepend: site.baseurl }}" alt="{{ image.alt }}">
