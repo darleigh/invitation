@@ -1,22 +1,18 @@
 ---
 layout: project
-permalink: /:title/
+permalink: /:title-:day:month:yyyy/
 category: projects
 
-meta:
-  keywords: "Jekyll, Pineapple"
-
 project:
-  title: "Red Pineapple"
-  type: "Jekyll"
-  url: "https://github.com/arnolds/pineapple"
+  title: "Thị Duyên & Hoàng Quân"
+  url: "ThiDuyen-HoangQuan"
+  direction: "ThiDuyen-HoangQuan"
+  groom: "Hoàng Quân"
+  # groomurl: ""
+  bride: "Thị Duyên"
+  # brideurl: ""
+  location: "Tư gia"
   logo: "/customer/ThiDuyen-HoangQuan/TDHQ1.png"
-  tech: "HTML, CSS, Boostrap, Sass, JavaScript, jQuery, Jekyll"
-
-agency:
-  title: "Red Pineapple Co"
-  url: "https://github.com/arnolds/pineapple"
-  year: "2017"
 
 images:
   - url: /customer/ThiDuyen-HoangQuan/TDHQ1.png
