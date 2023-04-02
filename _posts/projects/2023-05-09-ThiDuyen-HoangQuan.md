@@ -1,6 +1,7 @@
 ---
 layout: project
 permalink: /:title-:day:month
+date: 2023-05-09
 category: projects
 
 project:
@@ -22,9 +23,4 @@ images:
   - url: /customer/ThiDuyen-HoangQuan/TDHQ5.png
   - url: /customer/ThiDuyen-HoangQuan/TDHQ6.png
   - url: /customer/ThiDuyen-HoangQuan/TDHQ7.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ8.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ9.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ10.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ11.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ12.png
 ---
