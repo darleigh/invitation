@@ -6,7 +6,7 @@ category: projects
 project:
   title: "Thị Duyên & Hoàng Quân"
   url: "ThiDuyen-HoangQuan"
-  direction: "ThiDuyen-HoangQuan"
+  # direction: "ThiDuyen-HoangQuan"
   groom: "Hoàng Quân"
   # groomurl: ""
   bride: "Thị Duyên"
