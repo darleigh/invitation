@@ -6,6 +6,14 @@
 	<meta name="description" content="{{ page.content | strip_html | strip_newlines }}">
 	<meta name="keywords" content="{{ page.meta.keywords }}">
 	{% include head.html %}
+<style>
+	h4 {
+		text-align: left;
+	}
+	p {
+  text-align: justify;
+}
+</style>
 </head>
 <body>
 	{% include header.html %}
@@ -85,9 +93,9 @@
 				{% endif %}
 			</div> -->
 		</section>
-		<section class="product section container" style="border: 1px solid rgba(27, 31, 35, 0.15)">
+		<section class="product section container" style="border: 1px solid rgba(27, 31, 35, 0.15);style="padding:16px;">
+			<h4>Cùng xem ngay các khoảng khắc tuyệt vời của</h4>
 			<h2 class="section__title-center">
-				Cùng xem ngay<br> các khoảng khắc tuyệt vời của<br>
 				{{page.project.groom}} 🤵🏻👰🏻‍♀️ {{page.project.bride}}.
 			</h2>
 
