@@ -11,7 +11,7 @@ project:
   # groomurl: ""
   bride: "Thị Duyên"
   # brideurl: ""
-  location: "Tư gia"
+  location: "Tư gia nhà gái"
   logo: "/customer/ThiDuyen-HoangQuan/TDHQ1.png"
 
 images:
