@@ -4,27 +4,27 @@ permalink: /:title-:day:month
 category: projects
 
 project:
-  title: "Thị Duyên & Hoàng Quân"
+  title: "Trường Tân & Xuân Di"
   url: "ThiDuyen-HoangQuan"
-  # direction: "ThiDuyen-HoangQuan"
-  groom: "Hoàng Quân"
+  # direction: "TruongTan-XuanDi"
+  groom: "Trường Tân"
   # groomurl: ""
-  bride: "Thị Duyên"
+  bride: "Xuân Di"
   # brideurl: ""
-  location: "Tư gia nhà gái"
-  logo: "/customer/ThiDuyen-HoangQuan/TDHQ1.png"
+  location: "Nhà hàng Diamond Place"
+  logo: "/customer/TruongTan-XuanDi/TTXD1.jpg"
 
 images:
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ1.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ2.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ3.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ4.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ5.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ6.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ7.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ8.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ9.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ10.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ11.png
-  - url: /customer/ThiDuyen-HoangQuan/TDHQ12.png
+  - url: /customer/TruongTan-XuanDi/TTXD1.jpg
+  - url: /customer/TruongTan-XuanDi/TTXD2.jpg
+  - url: /customer/TruongTan-XuanDi/TTXD3.jpg
+  - url: /customer/TruongTan-XuanDi/TTXD4.jpg
+  - url: /customer/TruongTan-XuanDi/TTXD5.jpg
+  - url: /customer/TruongTan-XuanDi/TTXD6.jpg
+  - url: /customer/TruongTan-XuanDi/TTXD7.jpg
+  - url: /customer/TruongTan-XuanDi/TTXD8.jpg
+  - url: /customer/TruongTan-XuanDi/TTXD9.jpg
+  - url: /customer/TruongTan-XuanDi/TTXD10.jpg
+  - url: /customer/TruongTan-XuanDi/TTXD11.jpg
+  - url: /customer/TruongTan-XuanDi/TTXD12.jpg
 ---
