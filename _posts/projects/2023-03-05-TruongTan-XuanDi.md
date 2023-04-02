@@ -1,12 +1,11 @@
 ---
 layout: project
-permalink: /:title-:day:month
+permalink: /{{ page.eventdate }}/{{ page.title | slugify }}
 category: projects
 
 project:
   title: "Trường Tân & Xuân Di"
-  # url: "TruongTan-XuanDi"
-  # direction: "TruongTan-XuanDi"
+  eventdate: 05032023
   groom: "Trường Tân"
   # groomurl: ""
   bride: "Xuân Di"
@@ -23,8 +22,4 @@ images:
   - url: /customer/TruongTan-XuanDi/TTXD6.jpg
   - url: /customer/TruongTan-XuanDi/TTXD7.jpg
   - url: /customer/TruongTan-XuanDi/TTXD8.jpg
-  - url: /customer/TruongTan-XuanDi/TTXD9.jpg
-  - url: /customer/TruongTan-XuanDi/TTXD10.jpg
-  - url: /customer/TruongTan-XuanDi/TTXD11.jpg
-  - url: /customer/TruongTan-XuanDi/TTXD12.jpg
 ---
