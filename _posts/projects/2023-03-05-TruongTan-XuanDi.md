@@ -5,7 +5,7 @@ category: projects
 
 project:
   title: "Trường Tân & Xuân Di"
-  url: "TruongTan-XuanDi"
+  # url: "TruongTan-XuanDi"
   # direction: "TruongTan-XuanDi"
   groom: "Trường Tân"
   # groomurl: ""
