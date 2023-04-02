@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /:title-
+permalink: /:title-03052023
 category: projects
 
 project:
