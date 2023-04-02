@@ -1,25 +1,30 @@
-<!-- ---
+---
 layout: project
-permalink: /:title
+permalink: /:title-:day:month:yyyy/
 category: projects
 
 project:
   title: "Trường Tân & Xuân Di"
-  url: "TruongTan-XuanDi"
-  direction: "TruongTan-XuanDi"
+  url: "ThiDuyen-HoangQuan"
+  # direction: "TruongTan-XuanDi"
   groom: "Trường Tân"
-  groomurl: "https://www.facebook.com/chrisvu1992"
+  # groomurl: ""
   bride: "Xuân Di"
-  brideurl: "https://www.facebook.com/dinhhoangxuandi"
+  # brideurl: ""
   location: "Nhà hàng Diamond Place"
-  logo: "/customer/TruongTan-XuanDi/TTXD1.jpg"
+  logo: "TruongTan-XuanDi/TTXD1.jpg"
 
-agency:
-  title: "Tân & Di | Ngày kỷ niệm"
-  year: "2023"
 images:
-{% for i in (1..8) %}
-  - image:
-    url: "/customer/TruongTan-XuanDi/TTXD{{ i }}.jpg"
-{% endfor %}
---- -->
+  - url: TruongTan-XuanDi/TTXD1.jpg
+  - url: TruongTan-XuanDi/TTXD2.jpg
+  - url: TruongTan-XuanDi/TTXD3.jpg
+  - url: TruongTan-XuanDi/TTXD4.jpg
+  - url: TruongTan-XuanDi/TTXD5.jpg
+  - url: TruongTan-XuanDi/TTXD6.jpg
+  - url: TruongTan-XuanDi/TTXD7.jpg
+  - url: TruongTan-XuanDi/TTXD8.jpg
+  - url: TruongTan-XuanDi/TTXD9.jpg
+  - url: TruongTan-XuanDi/TTXD10.jpg
+  - url: TruongTan-XuanDi/TTXD11.jpg
+  - url: TruongTan-XuanDi/TTXD12.jpg
+---

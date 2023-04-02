@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /:title
+permalink: /:title-:day:month:yyyy/
 category: projects
 
 project:
@@ -14,12 +14,17 @@ project:
   location: "Tư gia"
   logo: "/customer/ThiDuyen-HoangQuan/TDHQ1.png"
 
-agency:
-  title: "Ngày kỷ niệm"
-  year: "2023"
 images:
-{% for i in (1..8) %}
-  - image:
-    url: /customer/ThiDuyen-HoangQuan/TDHQ{{i}}.png
-{% endfor %}
+  - url: /customer/ThiDuyen-HoangQuan/TDHQ1.png
+  - url: /customer/ThiDuyen-HoangQuan/TDHQ2.png
+  - url: /customer/ThiDuyen-HoangQuan/TDHQ3.png
+  - url: /customer/ThiDuyen-HoangQuan/TDHQ4.png
+  - url: /customer/ThiDuyen-HoangQuan/TDHQ5.png
+  - url: /customer/ThiDuyen-HoangQuan/TDHQ6.png
+  - url: /customer/ThiDuyen-HoangQuan/TDHQ7.png
+  - url: /customer/ThiDuyen-HoangQuan/TDHQ8.png
+  - url: /customer/ThiDuyen-HoangQuan/TDHQ9.png
+  - url: /customer/ThiDuyen-HoangQuan/TDHQ10.png
+  - url: /customer/ThiDuyen-HoangQuan/TDHQ11.png
+  - url: /customer/ThiDuyen-HoangQuan/TDHQ12.png
 ---
