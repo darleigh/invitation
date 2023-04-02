@@ -36,11 +36,13 @@
 												</div>
 											</a>
 					{% endfor %} -->
-						{% for image in page.images %}
-								<article class="product__card">
-									<img src="{{ image.url | prepend: site.baseurl }}" alt="{{ image.alt }}">
-								  </article>
-						{% endfor %}
+								
+									{% if page.images and page.images.size > 0 %}
+									<article class="product__card">
+									<img src="{{ page.images[0].url | prepend: site.baseurl }}"">
+									</article>
+									{% endif %}
+								  
 					  </div>
 					<div class="home__data" style="padding:16px;">
 						<h4> Mừng ngày kỷ niệm của</h4>
