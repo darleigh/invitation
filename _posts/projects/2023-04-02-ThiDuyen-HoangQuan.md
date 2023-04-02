@@ -22,4 +22,5 @@ images:
   - url: /customer/ThiDuyen-HoangQuan/TDHQ5.png
   - url: /customer/ThiDuyen-HoangQuan/TDHQ6.png
   - url: /customer/ThiDuyen-HoangQuan/TDHQ7.png
+  - url: /customer/ThiDuyen-HoangQuan/TDHQ8.png
 ---
