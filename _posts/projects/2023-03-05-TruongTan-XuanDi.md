@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /{{ page.eventdate }}/{{ page.title | slugify }}
+permalink: /:title-
 category: projects
 
 project:

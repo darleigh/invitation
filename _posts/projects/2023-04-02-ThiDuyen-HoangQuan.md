@@ -1,7 +1,6 @@
 ---
 layout: project
-permalink: /{{ page.eventdate }}/{{ page.title | slugify }}
-eventdate: 2023-05-09
+permalink: /:title-09052023
 category: projects
 
 project:
