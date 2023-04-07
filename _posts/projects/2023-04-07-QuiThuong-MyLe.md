@@ -5,11 +5,9 @@ category: projects
 
 project:
   title: "Quí Thường & Mỹ Lệ"
-  # url: "300423TNQT"
-  # direction: "300423TNQT"
-  groom: "Quốc Toàn"
+  groom: "Quí Thường"
   # groomurl: ""
-  bride: "Thảo Nhi"
+  bride: "Mỹ Lệ"
   # brideurl: ""
   logo: "/customer/300423TNQT/TDHQ1.png"
 
