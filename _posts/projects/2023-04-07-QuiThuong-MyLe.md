@@ -9,10 +9,10 @@ project:
   # groomurl: ""
   bride: "Mỹ Lệ"
   # brideurl: ""
-  logo: "/customer/300423TNQT/TDHQ1.png"
+  logo: "/customer/QTML/TDHQ1.png"
 
 images:
-  - url: /customer/300423TNQT/1.png
+  - url: /customer/300423QTML/1.png
   - url: /customer/300423TNQT/2.png
   - url: /customer/300423TNQT/3.png
   - url: /customer/300423TNQT/4.png
