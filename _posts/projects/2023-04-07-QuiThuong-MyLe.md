@@ -9,7 +9,7 @@ project:
   # groomurl: ""
   bride: "Mỹ Lệ"
   # brideurl: ""
-  logo: "/customer/QTML/TDHQ1.png"
+  logo: "/customer/QTML/1.png"
 
 images:
   - url: /customer/300423QTML/1.png
