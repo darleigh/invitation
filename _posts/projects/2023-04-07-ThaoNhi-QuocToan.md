@@ -11,7 +11,7 @@ project:
   # groomurl: ""
   bride: "Thảo Nhi"
   # brideurl: ""
-  logo: "/customer/300423TNQT/TDHQ1.png"
+  logo: "/customer/300423TNQT/.png
 
 images:
   - url: /customer/300423TNQT/1.png
