@@ -1,1 +1,1 @@
-find . \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" \) -exec sh -c 'avifenc "$0" "${0%.*}.avif"' {} \;
+find . \( -name "*.jpg" -o -name "*.jpeg" -o -name "*.png" \) -exec sh -c 'jpgenc "$0" "${0%.*}.jpg"' {} \;
