@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>{{ site.author }} • {{ page.project.title }}</title>
+	<meta name="author" content="{{ site.author }}">
+	<meta name="description" content="{{ page.content | strip_html | strip_newlines }}">
+	<meta name="keywords" content="{{ page.meta.keywords }}">
+	{% include head.html %}
+</head>
+<body>
+	{% include header.html %}
+	<main class="content">
+		<!--==================== DECORATE ====================-->
+		<section class="home" id="decorate">
+			<div class="home__container container grid" style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;border-radius:8px;text-align: justify;">
+				<!-- {% for item in site.categories.projects reversed %}
+								<div class="img-wrapper">
+									{% assign found_image = false %}
+										{% for file in site.static_files %}
+											{% if found_image == false and file.path contains 'customer/'page.project.direction %}
+												{% assign found_image = true %}
+												<article class="product__card">
+												<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ item.project.title }}" class="product__img"/>
+												</article>
+											{% endif %}
+										{% endfor %}
+								</div>
+							</a>
+						{% endfor %} -->
+					<!-- {% for item in site.categories.projects reversed %}
+						<a href="{{ item.url | prepend: site.baseurl }}">
+												<div class="img-wrapper">
+												<article class="product__card">
+													<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+												</article>
+												</div>
+											</a>
+					{% endfor %} -->
+								
+									{% if page.images and page.images.size > 0 %}
+									<article class="product__card">
+									<img src="{{ page.images[0].url | prepend: site.baseurl }}"">
+									</article>
+									{% endif %}
+								  
+					<div class="home__data" style="padding:16px;text-align: justify;">
+						<h4> Hoà quyện 🥘🥗🥙🥘🍛 cùng hôn lễ đặc biệt</h4>
+						<h1 class="home__title">
+							CALA
+						</h1>
+						<!-- <p class="home__description">Vào ngày <b>{{ page.date | date: "%d/%m/%Y" }}</b>.
+						<br>Tại <b>{{page.project.location}}</b>.</p> -->
+						<p class="home__description">
+							Một món ăn đặc biệt là cách để cặp đôi thể hiện tình cảm và truyền tải thông điệp của họ trong ngày cưới. Nó là một cách để gắn kết tình yêu và tạo ra một buổi tiệc hoàn hảo.
+						</p>
+						<a href="tel:0907089755" class="button button--flex">
+                            <i class="ri-customer-service-2-fill"></i> Đặt lịch tư vấn ngay! <i class="ri-arrow-right-down-line button__icon"></i>
+						</a>
+						<!-- <div>
+							<a href="{{page.project.brideurl}}" class="button button--flex" style="width: 45%;">
+								👰🏻‍♀️<i class="ri-arrow-right-down-line button__icon"></i>
+							</a>
+							<a href="{{page.project.groomurl}}" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black; width: 45%;border: 1px solid rgba(27, 31, 35, 0.15)">
+								🤵🏻<i class="ri-arrow-right-down-line button__icon"></i>
+							</a>
+						</div> -->
+					</div>
+				<!-- </div> -->
+			</div>
+		</section>
+		<!-- <section class="project-navigation">
+			<div class="container">
+				{% if page.previous and page.previous.categories contains "projects" %}
+				<a title="Previous {{ page.previous.project.title }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="prev">
+					<span class="h2">Previous</span>
+					<h2>{{ page.previous.project.title }}</h2>
+				</a>
+				{% endif %}
+				{% if page.next and page.next.categories contains "projects" %}
+				<a title="Next {{ page.next.project.title }}" href="{{ page.next.url | prepend: site.baseurl }}" class="next">
+					<span class="h2">Next</span>
+					<h2>{{ page.next.project.title }}</h2>
+				</a>
+				{% endif %}
+			</div> 
+		</section> -->
+		<!-- <section class="product section container" style="border: 1px solid rgba(27, 31, 35, 0.15);padding:16px;">
+			<h4>Nâng cao cảm xúc</h4>
+			<h2 class="section__title-center">
+				CALA
+			</h2>
+
+			<p class="product__description">
+				Một món ăn ngon và đặc biệt sẽ không chỉ tạo ra sự ấn tượng với khách mời mà còn góp phần làm cho buổi lễ trở nên đáng nhớ và ấm cúng hơn.
+			</p>
+			  <div class="product__container grid" id="lib">
+				{% for image in page.images %}
+						<article class="product__card">
+							<img src="{{ image.url | prepend: site.baseurl }}" alt="{{ image.alt }}">
+					 	 </article>
+				{% endfor %}
+			  </div>
+			  <hr>
+			  <p class="product__description">Món ăn là một phần quan trọng của buổi lễ, nó không chỉ đáp ứng nhu cầu ăn uống mà còn là cách để tạo ra một không khí vui tươi và đoàn kết cho tất cả khách mời.</p>
+		</section> -->
+	</main>
+	{% include footer.html %}
+	<script src="{{ "/assets/scripts/vendor/jquery-1.12.4.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/scripts/vendor/sticky-kit.min.js" | prepend: site.baseurl }}"></script>
+	<script src="{{ "/assets/scripts/project.js" | prepend: site.baseurl }}"></script>
+</body>
+</html>
