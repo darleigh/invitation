@@ -96,10 +96,10 @@
 						Một hành trình để đi tìm hạnh phúc thì phải bước qua biết bao nhiêu chông gai, chúng tôi luôn muốn cùng bạn lưu giữ những khoảng khắc tuyệt vời nhất.
 					</p>
 					<a href="https://zalo.me/0919045020" class="button button--flex" style="width:45%">
-						Liên hệ <i class="ri-arrow-right-down-line button__icon"></i>
+						<i class="ri-customer-service-2-fill"></i> Liên hệ <i class="ri-arrow-right-down-line button__icon"></i>
 					</a>
 					<a href="https://www.tiktok.com/@honghanhdecor?_t=8YzqZK2pyx0&_r=1" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;width:45%">
-						Tiktok<i class="ri-arrow-right-down-line button__icon"></i>
+						<i class="ri-music-fill"></i> Tiktok<i class="ri-arrow-right-down-line button__icon"></i>
 					</a>
 				</div>
 			</div>
@@ -170,12 +170,15 @@
 		<section class="product section container" style="background-color:#fff; padding:30px;border-radius:10px;border: 1px solid rgba(27, 31, 35, 0.15);margin-top:80px;">  
 			<h4>Xem ngay các mẫu</h4>
 			<h2 class="section__title-center" id="invitation_highlight">
-				Thiệp mời của 🤵🏻👰🏻‍♀️
+				Thiệp mời nổi bật
 			</h2>
 
 			<p class="product__description">
-				Các mẫu thiệp nổi bật.
+				Thiệp cưới là một phần quan trọng trong ngày cưới, giúp kết nối tình cảm và thể hiện sự tôn trọng và quan tâm đến cặp đôi. Mọi người hãy xem mẫu thiệp bên dưới nha.
 			</p>
+			<a href="/sanpham" class="button button--flex">
+				Xem thêm <i class="ri-arrow-right-down-line button__icon"></i>
+			</a>
 			<!-- <a href="	/product" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;">
 				Xem chi tiết<i class="ri-arrow-right-down-line button__icon"></i>
 			</a> -->
@@ -197,61 +200,14 @@
 				  {% if file.path contains 'invitation_card/highlight' and count < 8 %}
 					{% assign count = count | plus: 1 %}
 					<article class="product__card">
-					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-					</article>
+						<a href="/sanpham">
+						  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+						</a>
+					  </article>
 				  {% endif %}
 				{% endfor %}
 			  </div>
 			  <hr>
-			  <!--==================== THIỆP SINH NHẬT ====================-->
-			  <h4>Xem ngay các mẫu </h4>
-			  <h2 class="section__title-center" id="invitation_cake">
-				Thiệp sinh nhật đáng yêu <br> cho bé 👧🏻 và bé 👦🏻.
-			</h2>
-
-			<p class="product__description">
-				Các mẫu thiệp sinh nhật giá rẻ cho số lượng ít. Nhưng chất lượng thì chưa chắc đâu à nha! 😁
-			</p>
-			<!-- <a href="{{site.baseurl}}" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;">
-				Tiktok<i class="ri-arrow-right-down-line button__icon"></i>
-			</a> -->
-			<div class="product__container grid">
-				{% assign count = 0 %}
-				{% for file in site.static_files %}
-				  {% if file.path contains 'invitation_card/cake' and count < 4 %}
-					{% assign count = count | plus: 1 %}
-					<article class="product__card">
-					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-					</article>
-				  {% endif %}
-				{% endfor %}
-			  </div>
-			  <hr>
-			<!--==================== DANH THIẾP ====================-->
-			<h4>Các mẫu thiết kế</h4>
-			  <h2 class="section__title-center" id="invitation_publication">
-				Danh thiếp • Hoá đơn
-			</h2>
-
-			<p class="product__description">
-				Các mẫu thiết kế nổi bật, đặc biệt có thêm chương trình Danh thiếp trực tuyến cho quý khách hàng.
-			</p>
-			<!-- <a href="{{site.baseurl}}" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;">
-				Tiktok<i class="ri-arrow-right-down-line button__icon"></i>
-			</a> -->
-			<div class="product__container grid">
-				{% assign count = 0 %}
-				{% for file in site.static_files %}
-				  {% if file.path contains 'invitation_card/pub' and count < 4 %}
-					{% assign count = count | plus: 1 %}
-					<article class="product__card">
-					  
-					  <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
-					</article>
-				  {% endif %}
-				{% endfor %}
-			  </div>
-		</section>
 		<!--==================== PARTNER ====================-->
 		<!-- <section class="product section container" id="partner">
 			<h2 class="section__title-center">

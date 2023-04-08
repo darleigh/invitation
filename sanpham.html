@@ -1,0 +1,67 @@
+---
+layout: default
+permalink: /sanpham
+---
+<!--==================== PRODUCTS ====================-->
+<section class="product section container" style="background-color:#fff; padding:30px;border-radius:10px;border: 1px solid rgba(27, 31, 35, 0.15);margin-top:80px;">  
+    <div class="product__container grid">
+        {% assign count = 0 %}
+        {% for file in site.static_files %}
+          {% if file.path contains 'invitation_card/highlight' %}
+            {% assign count = count | plus: 1 %}
+            <article class="product__card">
+              <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <hr>
+      <!--==================== THIỆP SINH NHẬT ====================-->
+      <h4>Xem ngay các mẫu </h4>
+      <h2 class="section__title-center" id="invitation_cake">
+        Thiệp sinh nhật đáng yêu <br> cho bé 👧🏻 và bé 👦🏻.
+    </h2>
+
+    <p class="product__description">
+        Các mẫu thiệp sinh nhật giá rẻ cho số lượng ít. Nhưng chất lượng thì chưa chắc đâu à nha! 😁
+    </p>
+    <!-- <a href="{{site.baseurl}}" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;">
+        Tiktok<i class="ri-arrow-right-down-line button__icon"></i>
+    </a> -->
+    <div class="product__container grid">
+        {% assign count = 0 %}
+        {% for file in site.static_files %}
+          {% if file.path contains 'invitation_card/cake'%}
+            {% assign count = count | plus: 1 %}
+            <article class="product__card">
+              <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <hr>
+    <!--==================== DANH THIẾP ====================-->
+    <h4>Các mẫu thiết kế</h4>
+      <h2 class="section__title-center" id="invitation_publication">
+        Danh thiếp • Hoá đơn
+    </h2>
+
+    <p class="product__description">
+        Các mẫu thiết kế nổi bật, đặc biệt có thêm chương trình Danh thiếp trực tuyến cho quý khách hàng.
+    </p>
+    <!-- <a href="{{site.baseurl}}" class="button button--flex" style="background-color:rgb(244, 244, 244);color:black;">
+        Tiktok<i class="ri-arrow-right-down-line button__icon"></i>
+    </a> -->
+    <div class="product__container grid">
+        {% assign count = 0 %}
+        {% for file in site.static_files %}
+          {% if file.path contains 'invitation_card/pub' %}
+            {% assign count = count | plus: 1 %}
+            <article class="product__card">
+              
+              <img src="{{ file.path | prepend: site.baseurl }}" alt="{{ file.name }}" class="product__img"/>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+</section>
