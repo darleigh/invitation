@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /:title-30042023
+permalink: /:title-200523
 category: projects
 
 project:
@@ -9,19 +9,19 @@ project:
   # groomurl: ""
   bride: "Mỹ Lệ"
   # brideurl: ""
-  logo: "/customer/QTML/1.png"
+  logo: "/customer/200523QTML/1.avif"
 
 images:
-  - url: /customer/300423QTML/1.png
-  - url: /customer/300423TNQT/2.png
-  - url: /customer/300423TNQT/3.png
-  - url: /customer/300423TNQT/4.png
-  - url: /customer/300423TNQT/5.png
-  - url: /customer/300423TNQT/6.png
-  - url: /customer/300423TNQT/7.png
-  - url: /customer/300423TNQT/8.png
-  - url: /customer/300423TNQT/9.png
-  - url: /customer/300423TNQT/10.png
-  - url: /customer/300423TNQT/11.png
-  - url: /customer/300423TNQT/12.png
+  - url: /customer/200523QTML/1.avif
+  - url: /customer/200523QTML/2.avif
+  - url: /customer/200523QTML/3.avif
+  - url: /customer/200523QTML/4.avif
+  - url: /customer/200523QTML/5.avif
+  - url: /customer/200523QTML/6.avif
+  - url: /customer/200523QTML/7.avif
+  - url: /customer/200523QTML/8.avif
+  - url: /customer/200523QTML/9.avif
+  - url: /customer/200523QTML/10.avif
+  - url: /customer/200523QTML/11.avif
+  - url: /customer/200523QTML/12.avif
 ---
