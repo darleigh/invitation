@@ -36,12 +36,9 @@
 												</div>
 											</a>
 					{% endfor %} -->
-								
-									{% if page.project.logo > 0 %}
 									<article class="product__card">
 									<img src="{{ page.project.logo | prepend: site.baseurl }}"">
 									</article>
-									{% endif %}
 								  
 					<div class="home__data" style="padding:16px;text-align: justify;">
 						<h4> Hoà quyện 🥘🥗🥙🥘🍛<br>cùng hôn lễ đặc biệt</h4>
@@ -103,22 +100,22 @@
 			  <hr>
 			  <p class="product__description">Món ăn là một phần quan trọng của buổi lễ, nó không chỉ đáp ứng nhu cầu ăn uống mà còn là cách để tạo ra một không khí vui tươi và đoàn kết cho tất cả khách mời.</p>
 		</section> -->
-        <section class="project-navigation">
-			<div class="container">
-				{% if page.previous and page.previous.categories contains "projects" %}
-				<a title="Previous {{ page.previous.project.title }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="prev">
-					<span class="h2">Previous</span>
-					<h2>{{ page.previous.project.title }}</h2>
-				</a>
-				{% endif %}
-				{% if page.next and page.next.categories contains "projects" %}
-				<a title="Next {{ page.next.project.title }}" href="{{ page.next.url | prepend: site.baseurl }}" class="next">
-					<span class="h2">Next</span>
-					<h2>{{ page.next.project.title }}</h2>
-				</a>
-				{% endif %}
-			</div>
-		</section>
+			<!-- <section class="project-navigation">
+				<div class="container">
+					{% if page.previous and page.previous.categories contains "projects" %}
+					<a title="Previous {{ page.previous.project.title }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="prev">
+						<span class="h2">Xem ngay các hôn lễ khác</span>
+						<h2>{{ page.previous.project.title }}</h2>
+					</a>
+					{% endif %}
+					{% if page.next and page.next.categories contains "projects" %}
+					<a title="Next {{ page.next.project.title }}" href="{{ page.next.url | prepend: site.baseurl }}" class="next">
+						<span class="h2">Next</span>
+						<h2>{{ page.next.project.title }}</h2>
+					</a>
+					{% endif %}
+				</div>
+			</section> -->
 	</main>
 	{% include footer.html %}
 	<script src="{{ "/assets/scripts/vendor/jquery-1.12.4.min.js" | prepend: site.baseurl }}"></script>
