@@ -63,7 +63,7 @@ p{
 								<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
 							</article>
 							</div>
-							<h4 style="padding:8px;font-size: 1em;text-align: justify;">{{ item.project.title }}</h3>
+							<p style="padding:8px;font-size: 1em;">{{ item.project.title }}</p>
 						</a>
 						{% endfor %}
 				</div>
@@ -220,16 +220,16 @@ p{
 				Đối tác<br> đã đồng hành cùng chúng tôi.
 			</h2>
 				{% assign partner = site.categories.partner | sort: 'date' | reverse %}
-					{% for item in partners %}
-					<a href="{{ item.url | prepend: site.baseurl }}">
-						<div class="img-wrapper">
-						<article class="product__card">
-							<img src="{{ item.partner.logo | prepend: site.baseurl }}" alt="{{ item.partner.title }}" />
-						</article>
-						</div>
-						<!-- <h4 style="padding:8px;font-size: 1em;text-align: justify;">{{ item.partner.title }}</h3> -->
-					</a>
-					{% endfor %}
+				{% for item in partner %}
+				<a href="{{ item.url | prepend: site.baseurl }}">
+					<div class="img-wrapper">
+					<article class="product__card">
+						<img src="{{ item.partner.logo | prepend: site.baseurl }}" alt="{{ item.partner.title }}" />
+					</article>
+					</div>
+					<h3 style="padding:8px;font-size: 1em;text-align: justify;">{{ item.partner.title }}</h3>
+				</a>
+				{% endfor %}
 			</div>
 		</section>
 	
