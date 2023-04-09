@@ -13,32 +13,12 @@
 		<!--==================== DECORATE ====================-->
 		<section class="home" id="decorate">
 			<div class="home__container container grid" style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;border-radius:8px;text-align: justify;">
-				<!-- {% for item in site.categories.projects reversed %}
-								<div class="img-wrapper">
-									{% assign found_image = false %}
-										{% for file in site.static_files %}
-											{% if found_image == false and file.path contains 'customer/'page.project.direction %}
-												{% assign found_image = true %}
-												<article class="product__card">
-												<img src="{{ file.path | prepend: site.baseurl }}" alt="{{ item.project.title }}" class="product__img"/>
-												</article>
-											{% endif %}
-										{% endfor %}
-								</div>
-							</a>
-						{% endfor %} -->
-					<!-- {% for item in site.categories.projects reversed %}
-						<a href="{{ item.url | prepend: site.baseurl }}">
-												<div class="img-wrapper">
-												<article class="product__card">
-													<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
-												</article>
-												</div>
-											</a>
-					{% endfor %} -->
-									<article class="product__card">
-									<img src="{{ page.project.logo | prepend: site.baseurl }}"">
-									</article>
+				<div class="img-wrapper">
+						<article class="product__card">
+							<img src="{{ page.project.logo | prepend: site.baseurl }}"">
+							</article>
+						</div>
+									
 								  
 					<div class="home__data" style="padding:16px;text-align: justify;">
 						<h4> Hoà quyện 🥘🥗🥙🥘🍛<br>cùng hôn lễ đặc biệt</h4>
