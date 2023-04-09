@@ -212,20 +212,22 @@ p{
 			  <a href="/sanpham" class="button button--flex">
 				Xem thêm <i class="ri-arrow-right-down-line button__icon"></i>
 			</a>
+		</section>
 		<!--==================== PARTNER ====================-->
+
 		<section class="product section container" id="partner">
 			<h2 class="section__title-center">
 				Đối tác<br> đã đồng hành cùng chúng tôi.
 			</h2>
-				{% assign projects = site.categories.partner | sort: 'date' | reverse %}
+				{% assign partner = site.categories.partner | sort: 'date' | reverse %}
 					{% for item in partners %}
 					<a href="{{ item.url | prepend: site.baseurl }}">
 						<div class="img-wrapper">
 						<article class="product__card">
-							<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+							<img src="{{ item.partner.logo | prepend: site.baseurl }}" alt="{{ item.partner.title }}" />
 						</article>
 						</div>
-						<!-- <h4 style="padding:8px;font-size: 1em;text-align: justify;">{{ item.project.title }}</h3> -->
+						<!-- <h4 style="padding:8px;font-size: 1em;text-align: justify;">{{ item.partner.title }}</h3> -->
 					</a>
 					{% endfor %}
 			</div>
