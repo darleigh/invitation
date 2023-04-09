@@ -218,7 +218,7 @@ p{
 				Đối tác<br> đã đồng hành cùng chúng tôi.
 			</h2>
 				{% assign projects = site.categories.partner | sort: 'date' | reverse %}
-					{% for item in projects %}
+					{% for item in partners %}
 					<a href="{{ item.url | prepend: site.baseurl }}">
 						<div class="img-wrapper">
 						<article class="product__card">
