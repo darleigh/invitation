@@ -886,6 +886,15 @@ the website, in dark theme
 .show-scrollable-list {
   top: 3rem;
 }
+.scrollable-list .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--first-color);
+  color: white;
+  border-radius: 50%;
+}
+
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
