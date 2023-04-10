@@ -894,6 +894,14 @@ the website, in dark theme
   color: white;
   border-radius: 50%;
 }
+.scrollable-list li a:visited {
+  color: black;
+}
+.scrollable-list li a:hover {
+  color: var(--first-color);
+  text-decoration: none;
+  background-color:#fff;
+}
 
 
 /*=============== SCROLL BAR ===============*/
