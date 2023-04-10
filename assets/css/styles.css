@@ -841,7 +841,12 @@ the website, in dark theme
 }
 /*=============== SCROLL DOWN ===============*/
 .scrollable-list .a{
-  font-color: var(--first-color)
+  font-color: black;
+  text-align: right;
+}
+.scrollable-list .a:hover{
+  font-weight: bold;
+  font-color: var(--first-color);
 }
 .scrollable-list {
   position: fixed;
@@ -854,6 +859,7 @@ the website, in dark theme
   transition: 0.4s;
   margin-top: 50px;
   margin-right: 20px;
+  border-right: 5px solid var(--first-color);
 }
 
 /* Styles for the list items */
