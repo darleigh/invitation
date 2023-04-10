@@ -875,14 +875,27 @@ the website, in dark theme
   padding: 0.5rem;
   font-size: 1rem;
   margin: 8px;
-  border: 1px solid var(--first-color);
+  color: var(--first-color)
+  background-color: #fff;
   border-radius:4px;
+  display: inline-block;
 }
+.scrollable-list li:hover {
+  background-color: var(--first-color);
+  color: #fff;
+  cursor: pointer;
+}
+
 
 
 /* Styles for showing the scrollable list */
 .show-scrollable-list {
   top: 3rem;
+}
+@media (min-width: 768px) {
+  .scrollable-list {
+    /* your CSS properties for .scrollable-list */
+  }
 }
 
 /*=============== SCROLL BAR ===============*/
