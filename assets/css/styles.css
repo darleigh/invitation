@@ -878,12 +878,14 @@ the website, in dark theme
   color: var(--first-color);
   background-color: #fff;
   border-radius:4px;
-  display: inline-block;
 }
 .scrollable-list li:hover {
   background-color: var(--first-color);
   color: #fff;
   cursor: pointer;
+}
+.scrollable-list li:visited {
+  color: var(--first-color);
 }
 
 /* Styles for showing the scrollable list */
