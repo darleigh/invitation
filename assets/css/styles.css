@@ -840,53 +840,28 @@ the website, in dark theme
   bottom: 3rem;
 }
 /*=============== SCROLL DOWN ===============*/
-.scrollable-list a{
+/*=============== SCROLL DOWN ===============*/
+.scrollable-list .a{
   font-color: black;
-  text-align: right;
+  text-align: left;
 }
-
-.scrollable-list a:visited {
-  color: black;
-}
-
-.scrollable-list a:hover {
-  font-weight: bold;
-  color: var(--first-color);
-}
-.scrollable-list a i {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: var(--first-color);
-  color: #fff;
-  text-align: center;
-  margin-left: 5px;
-}
-.scrollable-list a:hover i {
-  background-color: #fff;
-  border-color: var(--first-color);
-  color: var(--first-color);
-}
-
-
 
 .scrollable-list .a:hover{
   font-weight: bold;
-  font-color: var(--first-color);
+  color: var(--first-color);
 }
+    
 .scrollable-list {
   position: fixed;
   top: 1rem;
-  right: 1rem;
+  left: 1rem;
   padding: 0.5rem;
   z-index: var(--z-tooltip);
-  opacity: 0.8;
   transition: 0.4s;
   margin-top: 50px;
-  margin-right: 20px;
-  border-right: 5px solid var(--first-color);
-  text-align: right;
+  margin-left: 20px;
+  border-left: 5px solid var(--first-color);
+  right: unset;
 }
 
 /* Styles for the list items */
@@ -898,9 +873,12 @@ the website, in dark theme
 
 .scrollable-list li {
   padding: 0.5rem;
-  /* color: #FFF; */
   font-size: 1rem;
+  margin: 8px;
+  border: 1px solid var(--first-color);
+  border-radius:4px;
 }
+
 
 /* Styles for showing the scrollable list */
 .show-scrollable-list {
