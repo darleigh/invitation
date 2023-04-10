@@ -874,11 +874,11 @@ the website, in dark theme
   top: 3rem;
 }
 /* Show the scrollable list on larger screens */
-/* @media (min-width: 768px) {
-  .scrollable-list {
+@media (min-width: 768px) {
+  /* .scrollable-list {
     display: block;
-  }
-} */
+  } */
+}
 
 /* Styles for showing the scrollable list */
 .show-scrollable-list {
