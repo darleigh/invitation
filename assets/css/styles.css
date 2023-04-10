@@ -840,21 +840,11 @@ the website, in dark theme
   bottom: 3rem;
 }
 /*=============== SCROLL DOWN ===============*/
-/*=============== SCROLL DOWN ===============*/
-.scrollable-list .a{
-  font-color: black;
-  text-align: left;
-}
-
-.scrollable-list .a:hover{
-  font-weight: bold;
-  color: var(--first-color);
-}
-    
+   
 .scrollable-list {
   position: fixed;
-  top: 1rem;
-  left: 1rem;
+  top: 0.5rem;
+  left: 0.5rem;
   padding: 0.5rem;
   z-index: var(--z-tooltip);
   transition: 0.4s;
@@ -862,6 +852,7 @@ the website, in dark theme
   margin-left: 20px;
   border-left: 5px solid var(--first-color);
   right: unset;
+  display: none; 
 }
 
 /* Styles for the list items */
@@ -879,23 +870,21 @@ the website, in dark theme
   background-color: #fff;
   border-radius:4px;
 }
-.scrollable-list li:hover {
-  background-color: var(--first-color);
-  color: #fff;
-  cursor: pointer;
-}
-.scrollable-list li a {
-  color: black;
-}
 
 /* Styles for showing the scrollable list */
 .show-scrollable-list {
   top: 3rem;
 }
+/* Show the scrollable list on larger screens */
 @media (min-width: 768px) {
   .scrollable-list {
-    /* your CSS properties for .scrollable-list */
+    display: block;
   }
+}
+
+/* Styles for showing the scrollable list */
+.show-scrollable-list {
+  top: 3rem;
 }
 
 /*=============== SCROLL BAR ===============*/
