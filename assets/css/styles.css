@@ -884,8 +884,8 @@ the website, in dark theme
   color: #fff;
   cursor: pointer;
 }
-.scrollable-list li:visited {
-  color: var(--first-color);
+.scrollable-list li a {
+  color: black;
 }
 
 /* Styles for showing the scrollable list */
