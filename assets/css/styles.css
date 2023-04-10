@@ -93,6 +93,35 @@ button{
   border: none;
   outline: none;
 }
+h1 {
+  font-size: 2.5em;
+  /* equivalent to 40px assuming the default font-size is 16px */
+}
+
+h2 {
+  font-size: 2em;
+  /* equivalent to 32px */
+}
+
+h3 {
+  font-size: 1.5em;
+  /* equivalent to 24px */
+}
+
+h4 {
+  font-size: 1.25em;
+  /* equivalent to 20px */
+}
+
+h5 {
+  font-size: 1em;
+  /* equivalent to 16px */
+}
+
+p, a {
+  font-size: 1em;
+  /* equivalent to 16px */
+}
 
 h1,h2,h3{
   color: var(--title-color);
@@ -875,9 +904,9 @@ the website, in dark theme
 }
 /* Show the scrollable list on larger screens */
 @media (min-width: 768px) {
-  /* .scrollable-list {
+  .scrollable-list {
     display: block;
-  } */
+  }
 }
 
 /* Styles for showing the scrollable list */
@@ -899,9 +928,10 @@ the website, in dark theme
   color: var(--first-color);
   text-decoration: none;
   background-color:#fff;
-  border: 1px solid rgba(27, 31, 35, 0.15);
+  /* border: 1px solid rgba(27, 31, 35, 0.15); */
   width: 48px;
   height: 48px;
+  box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, .15);
 }
 
 
