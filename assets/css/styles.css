@@ -903,9 +903,13 @@ the website, in dark theme
   top: 3rem;
 }
 /* Show the scrollable list on larger screens */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .scrollable-list {
     display: block;
+  }
+  .scrollable-list .circle {
+  width: 24px;
+  height: 24px;
   }
 }
 
@@ -920,6 +924,8 @@ the website, in dark theme
   background-color: var(--first-color);
   color: white;
   border-radius: 50%;
+  width: 48px;
+  height: 48px;
 }
 .scrollable-list li a:visited {
   color: white;
@@ -929,8 +935,7 @@ the website, in dark theme
   text-decoration: none;
   background-color:#fff;
   /* border: 1px solid rgba(27, 31, 35, 0.15); */
-  width: 48px;
-  height: 48px;
+
   box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, .15);
 }
 
