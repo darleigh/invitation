@@ -875,7 +875,7 @@ the website, in dark theme
   padding: 0.5rem;
   font-size: 1rem;
   margin: 8px;
-  color: var(--first-color)
+  color: var(--first-color);
   background-color: #fff;
   border-radius:4px;
   display: inline-block;
