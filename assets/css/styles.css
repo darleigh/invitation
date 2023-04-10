@@ -853,6 +853,24 @@ the website, in dark theme
   font-weight: bold;
   color: var(--first-color);
 }
+.scrollable-list a i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--first-color);
+  color: #fff;
+  text-align: center;
+  margin-left: 5px;
+}
+.scrollable-list a:hover i {
+  background-color: #fff;
+  border-color: var(--first-color);
+  color: var(--first-color);
+}
+
+
+
 .scrollable-list .a:hover{
   font-weight: bold;
   font-color: var(--first-color);
