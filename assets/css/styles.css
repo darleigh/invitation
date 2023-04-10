@@ -840,9 +840,18 @@ the website, in dark theme
   bottom: 3rem;
 }
 /*=============== SCROLL DOWN ===============*/
-.scrollable-list .a{
+.scrollable-list a{
   font-color: black;
   text-align: right;
+}
+
+.scrollable-list a:visited {
+  color: black;
+}
+
+.scrollable-list a:hover {
+  font-weight: bold;
+  color: var(--first-color);
 }
 .scrollable-list .a:hover{
   font-weight: bold;
@@ -853,13 +862,13 @@ the website, in dark theme
   top: 1rem;
   right: 1rem;
   padding: 0.5rem;
-  border-radius: 0.25rem;
   z-index: var(--z-tooltip);
   opacity: 0.8;
   transition: 0.4s;
   margin-top: 50px;
   margin-right: 20px;
   border-right: 5px solid var(--first-color);
+  text-align: right;
 }
 
 /* Styles for the list items */
