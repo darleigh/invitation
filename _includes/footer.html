@@ -102,7 +102,6 @@
 
 	<p class="footer__copy">&#169; <a href="https://darleigh.com">Duong Nguyen</a> • All rights reserved.</p>
 </footer>
-
 <!--=============== SCROLL UP ===============-->
 <a href="#" class="scrollup" id="scroll-up"> 
 	<i class="ri-arrow-up-fill scrollup__icon"></i>
@@ -110,6 +109,17 @@
 
 <!--=============== SCROLL REVEAL ===============-->
 <script src="https://honghanh.org/assets/js/scrollreveal.min.js"></script>
-
+<script>
+	// Scrollable List - Show on Scroll
+	const scrollableList = document.querySelector('.scrollable-list');
+  
+	window.addEventListener('scroll', () => {
+	  if(window.pageYOffset > 100) {
+		scrollableList.classList.add('show-scrollable-list');
+	  } else {
+		scrollableList.classList.remove('show-scrollable-list');
+	  }
+	})
+  </script>
 <!--=============== MAIN JS ===============-->
 <script src="https://honghanh.org/assets/js/main.js"></script>
