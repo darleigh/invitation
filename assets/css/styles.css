@@ -906,7 +906,7 @@ the website, in dark theme
   display: block;
 }
 /* Show the scrollable list on larger screens */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .scrollable-list .circle {
   width: 24px;
   height: 24px;
@@ -933,7 +933,7 @@ the website, in dark theme
 .scrollable-list li a:hover {
   color: var(--first-color);
   text-decoration: none;
-    
+  background-color: #fff;
   /* border: 1px solid rgba(27, 31, 35, 0.15); */
 
   box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, .15);
