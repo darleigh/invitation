@@ -906,12 +906,12 @@ the website, in dark theme
   display: block;
 }
 /* Show the scrollable list on larger screens */
-@media (min-width: 768px) {
-  .scrollable-list .circle {
-  width: 24px;
-  height: 24px;
+@media (max-width: 767px) {
+  .scrollable-list {
+    display: none;
   }
 }
+
 
 /* Styles for showing the scrollable list */
 .show-scrollable-list {
