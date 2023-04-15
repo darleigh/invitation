@@ -75,15 +75,25 @@ h6{
 p{
   font-size: 1.2em;
 }
+partner-content{
+  font-family: Pacifico;
+  font-size: 2em;
+  text-align: center;
+  color: #d1d1d6;
+}
+partner-content:hover{
+  color: black;
+}
 /* <!--=============== Highlight Story ===============--> */
 a:visited {
   text-decoration-line: underline;
-  text-decoration-color: var(--first-color);
+  text-decoration-color: --var(--first-color);
   color: black;
 }
-a::after {
+
+.header a::after {
   content: ''; position: absolute; bottom: -.5rem; left: 0; width: 50%; height: 2px; background-color: var(--first-color);
-}
+} 
 
 /* <!--=============== Highlight Story ===============--> */
 .grid-item {
