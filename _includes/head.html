@@ -18,7 +18,6 @@
 
 <!--=============== CSS ===============-->
 <link rel="stylesheet" href="https://honghanh.org/assets/css/styles.css">
-<script src="navigation.js"></script>
 <style>
 
 /* <!--=============== Typography ===============--> */
@@ -91,9 +90,9 @@ a:visited {
   color: black;
 }
 
-.header a::after {
-  content: ''; position: absolute; bottom: -.5rem; left: 0; width: 50%; height: 2px; background-color: var(--first-color);
-} 
+  .header .nav__item a.selected {
+    content: ''; position: absolute; bottom: -.5rem; left: 0; width: 50%; height: 2px; background-color: var(--first-color);
+  } 
 
 /* <!--=============== Highlight Story ===============--> */
 .grid-item {
