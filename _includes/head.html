@@ -55,6 +55,7 @@
 h1 {
 		font-size: 1.8em;
 		line-height: 1.5em;
+    color: var(--first-color);
 	}
 h2 {
 		font-size: 1.7em;
@@ -84,15 +85,15 @@ partner-content:hover{
   color: black;
 }
 /* <!--=============== Highlight Story ===============--> */
-a:visited {
+.header a:visited {
   text-decoration-line: underline;
-  text-decoration-color: --var(--first-color);
+  text-decoration-color: var(--first-color);
   color: black;
 }
 
-  .header .nav__item a.selected {
-    content: ''; position: absolute; bottom: -.5rem; left: 0; width: 50%; height: 2px; background-color: var(--first-color);
-  } 
+a.selected {
+  content: ''; position: absolute; bottom: -.5rem; left: 0; width: 50%; height: 2px; background-color: var(--first-color);
+} 
 
 /* <!--=============== Highlight Story ===============--> */
 .grid-item {
