@@ -166,15 +166,13 @@ p{
 				Đối tác<br> đã đồng hành cùng chúng tôi.
 			</h2>
 			<div class="grid-container" style="margin-top:50px; background-color:#fff; padding:30px;border-radius:10px;">
-					{% assign projects = site.categories.partner | sort: 'date' | reverse %}
+					{% assign projects = site.categories.partner reverse %}
 					{% for item in projects %}
 					<a href="{{ item.url | prepend: site.baseurl }}">
 						<div class="img-wrapper">
-							<article class="product__card">
-								<img src="{{ item.project.logo | prepend: site.baseurl }}" style="" alt="{{ item.project.title }}" />
-							</article>
+							<p style="padding:8px;font-size: 1.4em;text-align: center;">{{item.project.title}}</p>
 						</div>
-						<p style="padding:8px;font-size: 1em;text-align: center;">{{ item.project.title }}</p>
+						
 					</a>
 					{% endfor %}
 			</div>
