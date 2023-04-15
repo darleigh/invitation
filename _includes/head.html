@@ -105,16 +105,19 @@ p{
   transition: all 0.4s ease-in-out;
 }
 /* <!--=============== Highlight Story ===============--> */
-a:visited, a[href^="tel"] {
+.footer__information a:hover,
+.footer__information a:hover[href^="tel"] {
+  text-decoration-line: none;
+  color: var(--first-color);
+}
+
+.footer__information a:visited,
+.footer__information a[href^="tel"] {
   text-decoration-line: underline !important;
   text-decoration-color: var(--first-color) !important;
   color: black;
 }
 
-a:hover, a:hover[href^="tel"] {
-  text-decoration-line: none;
-  color: var(--first-color);
-}
 
 header.a {
   font-weight: bolder;
