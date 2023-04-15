@@ -41,12 +41,12 @@ p{
 		<section class="intro">
 			<div class="container" id="story">
 				<h1 class="section__title-center" style="margin-top:100px">
-					Các sự kiện nổi bật.
+					<h2 style="color:black">Các<h2> sự kiện <h2 style="color:black">nổi bật</h2>
 				</h1>
 				<p class="product__description">
 					Lưu trữ kỷ niệm cả đời! 🥰
 				</p>
-				<div class="grid-container" style="margin-top:50px; background-<hr>:#fff; padding:30px;border-radius:10px;">
+				<div class="grid-container" style="margin-top:50px; style="background:#fff; padding:30px;border-radius:10px;">
 					{% assign projects = site.categories.projects | sort: 'date' | reverse %}
 						{% for item in projects %}
 						<a href="{{ item.url | prepend: site.baseurl }}">
@@ -66,7 +66,7 @@ p{
 					<img style="border-radius: 20px" src="assets/img/trangtri.png" alt="" class="home__img">
 				<div class="home__data">
 					<h2 class="section__title about__title">
-						Cùng lưu giữ Kỷ niệm! ⭐
+						<h2 style="color:black">Cùng lưu giữ <h2>kỷ niệm ⭐
 					</h2>
 					<p class="home__description">
 						Một hành trình để đi tìm hạnh phúc thì phải bước qua biết bao nhiêu chông gai, chúng tôi luôn muốn cùng bạn lưu giữ những khoảng khắc tuyệt vời nhất.
@@ -89,7 +89,9 @@ p{
 
 				<div class="about__data">
 					<h2 class="section__title about__title">
-						Chúng tôi có gì?
+						<h2 style="color:black">Sự<h2> lựa chọn<h2 style="color:black"> hàng đầu!<h2>
+						</h2>
+						</h2>
 					</h2>
 
 					<p class="about__description">
@@ -133,7 +135,7 @@ p{
 		<!--==================== PRODUCTS ====================-->
 		<section class="product section container" style="background-color:#fff; padding:30px;border-radius:10px;border: 1px solid rgba(27, 31, 35, 0.15);margin-top:80px;">  
 			<h2 class="section__title-center" id="invitation_highlight">
-				Thiệp mời nổi bật
+				<h2 style="color:black">Các mẫu<h2> thiệp mời <h2 style="color:black">nổi bật</h2>
 			</h2>
 
 			<p class="product__description">
@@ -162,9 +164,11 @@ p{
 
 		<section class="product section container" id="partner">
 			<h2 class="section__title-center">
-				Đối tác
+				<h2 style="color:black">Các<h2> đối tác <h2 style="color:black">hàng đầu</h2>
 			</h2>
-			<h4 class="section__title-center">đã đồng hành cùng chúng tôi.</h4>
+			
+
+			<p class="product__description">đã đồng hành cùng chúng tôi.</p>
 			<div class="grid-container" style="margin-top:50px; background-color:#fff; padding:30px;border-radius:10px;">
 					{% assign projects = site.categories.partner reverse %}
 					{% for item in projects %}
@@ -181,7 +185,7 @@ p{
 		<!--==================== THANKS ====================-->
 		<section class="product section container" id="partner">
 			<h2 class="section__title-center">
-				Chân thành cảm ơn Quý khách.
+				<h2 style="color:black">Chân thành cảm ơn<h2> Quý khách <h2 style="color:black"></h2>
 			</h2>
 			<p class="product__description">vì đã đồng hành và tin tưởng sử dụng dịch vụ của chúng tôi.</p>
 		</section>
