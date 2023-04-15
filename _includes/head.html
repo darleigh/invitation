@@ -18,6 +18,7 @@
 
 <!--=============== CSS ===============-->
 <link rel="stylesheet" href="https://honghanh.org/assets/css/styles.css">
+<script src="navigation.js"></script>
 <style>
 
 /* <!--=============== Typography ===============--> */
@@ -74,6 +75,14 @@ h6{
 p{
   font-size: 1.2em;
 }
+/* <!--=============== Highlight Story ===============--> */
+header a.selected {
+  font-weight: bold;
+  color: var(--first-color);
+}
+.header.a::after {
+  content: ''; position: absolute; bottom: -.5rem; left: 0; width: 50%; height: 2px; background-color: var(--first-color); }
+
 /* <!--=============== Highlight Story ===============--> */
 .grid-item {
   display: flex;
