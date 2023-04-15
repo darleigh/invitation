@@ -176,17 +176,19 @@ p{
 			
 
 			<p class="product__description">đã đồng hành cùng chúng tôi.</p>
-			<div class="grid-container" style="margin-top:50px; background-color:#fff; padding:30px;border-radius:10px;">
-					{% assign projects = site.categories.partner reverse %}
-					{% for item in projects %}
+			<div class="grid-container" style="margin-top:50px">
+				{% assign projects = site.categories.partner reverse %}
+				{% for item in projects %}
+				  {% if item.project.show != 'none' %}
 					<a href="{{ item.url | prepend: site.baseurl }}">
-						<div class="img-wrapper">
-							<p class="partner-content">{{item.project.title}}</p>
-						</div>
-						
+					  <div class="img-wrapper">
+						<p class="partner-content">{{item.project.title}}</p>
+					  </div>
 					</a>
-					{% endfor %}
-			</div>
+				  {% endif %}
+				{% endfor %}
+			  </div>
+			  
 		</section>
 	
 		<!--==================== THANKS ====================-->
