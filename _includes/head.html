@@ -76,12 +76,14 @@ p{
   font-size: 1.2em;
 }
 /* <!--=============== Highlight Story ===============--> */
-header a.selected {
-  font-weight: bold;
-  color: var(--first-color);
+a:visited {
+  text-decoration-line: underline;
+  text-decoration-color: var(--first-color);
+  color: black;
 }
-.header.a::after {
-  content: ''; position: absolute; bottom: -.5rem; left: 0; width: 50%; height: 2px; background-color: var(--first-color); }
+a::after {
+  content: ''; position: absolute; bottom: -.5rem; left: 0; width: 50%; height: 2px; background-color: var(--first-color);
+}
 
 /* <!--=============== Highlight Story ===============--> */
 .grid-item {

@@ -10,7 +10,7 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 220;
-  --first-color: hsl(var(--hue), 100%, 32%);
+  --first-color: #0071ff;
   --first-color-alt: hsl(var(--hue), 60%, 28%);
   --first-color-light: hsl(var(--hue), 24%, 66%);
   --first-color-lighten: hsl(var(--hue), 24%, 92%);
