@@ -411,7 +411,10 @@ the website, in dark theme
 }
 
 .button:hover{
-  background-color: var(--first-color-alt);
+  background-color: #fff;
+  border-radius: .5rem;
+  transition: .3s;
+  border:2px solid var(--first-color);
 }
 
 .button__icon{
