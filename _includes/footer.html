@@ -120,8 +120,18 @@
 		scrollableList.classList.remove('show-scrollable-list');
 	  }
 	})
-	
-	{% include navigation.js %}
+
+	window.addEventListener('DOMContentLoaded', () => {
+		const links = document.querySelectorAll('header a');
+		const currentPath = window.location.pathname;
+
+		links.forEach(link => {
+			if (link.getAttribute('href') === currentPath) {
+			link.classList.add('selected');
+			}
+		});
+		});
+
   </script>
 <!--=============== MAIN JS ===============-->
 <script src="https://honghanh.org/assets/js/main.js"></script>
