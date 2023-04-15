@@ -105,11 +105,17 @@ p{
   transition: opacity 0.4s ease-in-out; /* add transition effect */
 }
 /* <!--=============== Highlight Story ===============--> */
-a:visited {
-  text-decoration-line: underline;
-  text-decoration-color: var(--first-color);
+a:visited, a[href^="tel"] {
+  text-decoration-line: underline !important;
+  text-decoration-color: var(--first-color) !important;
   color: black;
 }
+
+a:hover, a:hover[href^="tel"] {
+  text-decoration-line: none;
+  color: var(--first-color);
+}
+
 header.a {
   font-weight: bolder;
 }
