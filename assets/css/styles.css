@@ -65,7 +65,7 @@ span.subtitle{
   opacity: 0.1;
   z-index:0;
   font-weight: bolder;
-  margin-bottom: -0.2em;
+  margin-bottom: -0.3em;
   margin-left: -0.1em;
   font-size: 1.2em;
   text-align: center;
@@ -778,8 +778,8 @@ the website, in dark theme
   color: #FFF;
   padding: 1rem 1.75rem;
   border-radius: .5rem;
-  font-weight: var(--font-medium);
   transition: .3s;
+  font-weight: bolder;
 }
 
 .button:hover{
@@ -787,7 +787,6 @@ the website, in dark theme
   border-radius: .5rem;
   color:var(--first-color);
   transition: .3s;
-  font-weight: bolder;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   /* border:2px solid var(--first-color); */
 }
