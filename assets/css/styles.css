@@ -783,10 +783,13 @@ the website, in dark theme
 }
 
 .button:hover{
-  background-color: #fff;
+  /* /* background-color: #fff; */
   border-radius: .5rem;
+  color:var(--first-color);
   transition: .3s;
-  border:2px solid var(--first-color);
+  font-weight: bolder;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  /* border:2px solid var(--first-color); */
 }
 
 .button__icon{
