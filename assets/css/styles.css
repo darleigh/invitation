@@ -46,7 +46,8 @@
 
 .button--flex, .button{
   height:auto;
-  width: 100%;
+  width: auto;
+  float: right;
   text-align: center;
   justify-content: center;
   margin: 10px;
