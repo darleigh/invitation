@@ -1378,11 +1378,11 @@ p{
 }
 
 
-header.a {
+.header a.nav__link {
   font-weight: bolder;
 }
 
-a.selected {
+.header a.selected {
   color: var(--first-color);
   font-weight: bolder;
 } 
