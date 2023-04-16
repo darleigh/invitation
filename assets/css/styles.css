@@ -783,7 +783,7 @@ the website, in dark theme
 }
 
 .button:hover{
-  /* /* background-color: #fff; */
+  background-color: #fff;
   border-radius: .5rem;
   color:var(--first-color);
   transition: .3s;
