@@ -1306,9 +1306,9 @@ the website, in dark theme
 * {
   font-family: 'Google Sans', sans-serif;
 }
-h1, h2, h3{
+/* h1, h2, h3{
   color: var(--first-color);
-}
+} */
 h1 {
 		font-size: 1.8em;
 		line-height: 1.5em;
@@ -1334,25 +1334,26 @@ span.subtitle{
   opacity: 0.1;
   z-index:0;
   font-weight: bolder;
-  margin-top: -0.1em;
-  margin-left: -0.1em;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: -0.2em;
+  margin-left: -0.2em;
   font-size: 1.2em;
   text-align: center;
   display: block;
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  
 }
 
 span.title{
-  color:var(--first-color);
+  color: var(--first-color);
 }
 p{
   font-size: 1.2em;
 }
 .partner-content{
   font-family: 'Pacifico';
-  font-size: 2em;
+  font-size: 2.2em;
   text-align: center;
   color: #d1d1d6;
 }
