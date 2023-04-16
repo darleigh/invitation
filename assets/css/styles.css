@@ -1345,7 +1345,7 @@ span.subtitle{
 }
 
 span.title{
-  color:black;
+  color:var(--first-color);
 }
 p{
   font-size: 1.2em;
