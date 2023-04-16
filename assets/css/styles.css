@@ -65,7 +65,7 @@ span.subtitle{
   opacity: 0.1;
   z-index:0;
   font-weight: bolder;
-  margin-top: -0.1em;
+  margin-top: -0.05em;
   margin-left: -0.1em;
   font-size: 1.2em;
   text-align: center;
@@ -93,13 +93,17 @@ p{
 }
 /* <!--=============== Highlight Story ===============--> */
 .footer__information a:hover,
-.footer__information a:hover[href^="tel"] {
+.footer__information a[href^="tel"],
+.footer__information a[href^="https"],
+.footer__information a[href^="/"]{
   text-decoration-line: none;
   color: var(--first-color);
 }
 
 .footer__information a:visited,
-.footer__information a[href^="tel"] {
+.footer__information a[href^="tel"],
+.footer__information a[href^="https"],
+.footer__information a[href^="/"]{
   text-decoration-line: underline !important;
   text-decoration-color: var(--first-color) !important;
   color: black;
