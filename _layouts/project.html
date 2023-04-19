@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>{{ site.author }} • {{ page.project.title }}</title>
-	<meta name="author" content="{{ site.author }}">
-	<meta name="description" content="{{ page.content | strip_html | strip_newlines }}">
-	<meta name="keywords" content="{{ page.meta.keywords }}">
-	{% include head.html %}
-	<style>
-		p{
-			text-align: justify;
-		}
-			</style>
-</head>
-<body>
-	{% include header.html %}
-	<main class="content">
+---
+layout: default
+permalink: /sanpham
+---
 		<!--==================== DECORATE ====================-->
 		<section class="home" id="decorate">
 			<div class="home__container container grid" style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;border-radius:8px;text-align: justify;">
@@ -119,12 +106,3 @@
 			  </div>
 			  <hr>
 			  <p class="product__description">Những khoảnh khắc tuyệt vời đó sẽ mãi được lưu giữ và ghi nhận trong trái tim của họ, khiến cho họ càng yêu thương và trân trọng nhau hơn nữa.</p>
-		</section>
-	</main>
-	{% include footer.html %}
-	<script src="{{ "/assets/scripts/vendor/jquery-1.12.4.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/assets/scripts/vendor/sticky-kit.min.js" | prepend: site.baseurl }}"></script>
-	<script src="{{ "/assets/scripts/project.js" | prepend: site.baseurl }}"></script>
-</body>
-</html>
