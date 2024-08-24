@@ -2,39 +2,7 @@
 layout: default
 permalink: /
 ---
-	<!-- =============== SCROLL DOWN ===============
-	<div class="scrollable-list">
-		<ul>
-		<li><a class="circle" href="#story"> <i class="ri-vip-crown-2-fill"></i></a></li>
-		<li><a class="circle" href="#decorate"><i class="ri-pencil-ruler-2-fill"></i></a></li>
-		<li><a class="circle" href="#invitation"><i class="ri-mail-unread-fill"> </i></a></li>
-		<li><a class="circle" href="#partner"><i class="ri-service-fill"></i></a></li>
-		</ul>
-	</div> -->
-	<!-- <section class="intro">
-		<div class="container" id="story">
-			
-			<h1 class="section__title-center" style="margin-top:100px">
-				<!-- <span class="subtitle">Các sự kiện nổi bật</span> -->
-				Các<span class="title"> sự kiện </span>nổi bật
-			</h1>
-			<p class="product__description" style="padding-bottom: 2em;">
-				Lưu trữ kỷ niệm cả đời! 🥰
-			</p>
-			<div class="grid-container">
-				{% assign projects = site.categories.projects | sort: 'date' | reverse %}
-					{% for item in projects %}
-					<a href="{{ item.url | prepend: site.baseurl }}">
-						<div class="img-wrapper">
-						<article class="product__card">
-							<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
-						</article>
-						</div>
-						<p style="padding:8px;font-size: 1em;text-align: center;">{{ item.project.title }}</p>
-					</a>
-					{% endfor %}
-			</div>			
-	</section>-->
+
 	<!--==================== DECORATE ====================-->
 	<section class="home" id="decorate">
 		<div class="home__container container grid">
@@ -58,32 +26,6 @@ permalink: /
 		</div>
 
 	</section>
-
-	<!--==================== PARTNER ====================-->
-	
-	<!--<section class="product section container" id="partner">
-		
-		<h2 class="section__title-center">
-			<!-- <span class="subtitle">Các đối tác hàng đầu</span> -->
-			Các<span class="title"> đối tác </span>hàng đầu
-		</h2>
-		
-
-		<p class="product__description">đã đồng hành cùng chúng tôi.</p>
-		<div class="grid-container" style="margin-top:50px">
-			{% assign projects = site.categories.partner reverse %}
-			{% for item in projects %}
-			  {% if item.project.show != 'none' %}
-				<a href="{{ item.url | prepend: site.baseurl }}">
-				  <div class="img-wrapper">
-					<p class="partner-content">{{item.project.title}}</p>
-				  </div>
-				</a>
-			  {% endif %}
-			{% endfor %}
-		  </div>
-		  
-	</section>-->
 
 	<!--==================== THANKS ====================-->
 	<section class="product section container" id="partner">
